@@ -1,6 +1,17 @@
 
 import streamlit as st
 import pandas as pd
+st.markdown("""
+    <style>
+    body {
+        background-image: url("https://i.imgur.com/I2OijBf.png");
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    </style>
+""", unsafe_allow_html=True)
 
 # Load data
 ratings = pd.read_csv("ratings.csv")
