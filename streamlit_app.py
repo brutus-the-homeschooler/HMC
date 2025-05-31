@@ -49,3 +49,23 @@ for label, quantile in [("Q1", q1), ("Q2", q2), ("Q3", q3)]:
     st.markdown(f"**Synopsis:** _{movie['synopsis']}_")
     st.markdown(f"[IMDb]({movie['imdb_url']}) | [Wikipedia]({movie['wiki_url']})")
     st.radio(f"Is this week's movie better than the {label} movie?", ["Yes", "No"], key=label)
+# Capture user answers from radios
+q1_answer = st.session_state["Q1"]
+q2_answer = st.session_state["Q2"]
+q3_answer = st.session_state["Q3"]
+
+# Determine predicted score range
+if q1_answer == "No":
+    prediction = f"Less than {q1:.1f}"
+elif q1_answer == "Yes" and q2_answer == "No":
+    prediction = f"Between {q1:.1f} and {q2:.1f}"
+elif q2_answer == "Yes" and q3_answer == "No":
+    prediction = f"Between {q2:.1f} and {q3:.1f}"
+elif all(ans == "Yes" for ans in [q1_answer, q2_answer, q3_answer]):
+    prediction = f"Greater than {q3:.1f}"
+else:
+    prediction = "Unable to predict based on your answers."
+
+# Display prediction
+st.markdown(f"### 🧠 Predicted Score Range")
+st.markdown(f"Based on your answers, we think this week's movie score will be: **{prediction}**")
