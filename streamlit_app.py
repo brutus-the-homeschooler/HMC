@@ -31,6 +31,17 @@ st.markdown("<h1>🩸 Horror Movie Club 🧟</h1>", unsafe_allow_html=True)
 users = df['username'].unique()
 selected_user = st.selectbox("Select a user", users)
 user_df = df[df['username'] == selected_user]
+# Get the current (latest) movie from metadata
+current_movie = metadata.loc[metadata['movie_id'].idxmax()]
+
+# Display "Our Next Movie" section
+st.markdown("## 🍿 Our Next Movie Is...")
+st.image(current_movie['poster_url'], width=300)
+st.markdown(f"### **{current_movie['official_title']}**")
+st.markdown(f"**Synopsis:** _{current_movie['synopsis']}_")
+
+# Links
+st.markdown(f"[🎬 IMDb]({current_movie['imdb_url']}) &nbsp;&nbsp;|&nbsp;&nbsp; [📚 Wikipedia]({current_movie['wiki_url']}) &nbsp;&nbsp;|&nbsp;&nbsp; [▶️ Watch Trailer]({current_movie['trailer_url']})", unsafe_allow_html=True)
 
 prediction_placeholder = st.empty()  # Reserve a space for prediction text
 
