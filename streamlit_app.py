@@ -42,13 +42,20 @@ def closest_movie_to(value):
 
 for label, quantile in [("Q1", q1), ("Q2", q2), ("Q3", q3)]:
     movie = closest_movie_to(quantile).iloc[0]
-    st.subheader(f"{label} Benchmark Movie: {movie['official_title']} ({movie['year']})")
+    friendly_labels = {
+    "Q1": "👎 Lower-Rated Benchmark",
+    "Q2": "🤷 Middle-Rated Benchmark",
+    "Q3": "👍 Higher-Rated Benchmark"
+}
+
+    st.subheader(f"{friendly_labels[label]}: {movie['official_title']} ({movie['year']})")
+
     st.image(movie['poster_url'], width=200)
     st.markdown(f"**Director:** {movie['director']}")
     st.markdown(f"**RT Score:** {movie['rt_score']}%")
     st.markdown(f"**Synopsis:** _{movie['synopsis']}_")
     st.markdown(f"[IMDb]({movie['imdb_url']}) | [Wikipedia]({movie['wiki_url']})")
-    st.radio(f"Is this week's movie better than the {label} movie?", ["Yes", "No"], key=label)
+    st.radio(f"Do you think this week's movie is better than *{movie['official_title']}*?", ["Yes", "No"], key=label)
 # Capture user answers from radios
 q1_answer = st.session_state["Q1"]
 q2_answer = st.session_state["Q2"]
