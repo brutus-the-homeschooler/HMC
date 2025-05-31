@@ -32,6 +32,8 @@ users = df['username'].unique()
 selected_user = st.selectbox("Select a user", users)
 user_df = df[df['username'] == selected_user]
 
+prediction_placeholder = st.empty()  # Reserve a space for prediction text
+
 # Score calculations
 q1 = user_df['score'].quantile(0.25)
 q2 = user_df['score'].mean()
@@ -61,21 +63,28 @@ q1_answer = st.session_state["Q1"]
 q2_answer = st.session_state["Q2"]
 q3_answer = st.session_state["Q3"]
 
-# Determine predicted score range
-if q1_answer == "No":
-    prediction = f"Less than {q1:.1f}"
-elif q1_answer == "Yes" and q2_answer == "No":
-    prediction = f"Between {q1:.1f} and {q2:.1f}"
-elif q2_answer == "Yes" and q3_answer == "No":
-    prediction = f"Between {q2:.1f} and {q3:.1f}"
-elif all(ans == "Yes" for ans in [q1_answer, q2_answer, q3_answer]):
-    prediction = f"Greater than {q3:.1f}"
-else:
-    prediction = "Unable to predict based on your answers."
+# Use the reserved placeholder to display at the top
+prediction_placeholder.markdown("### 🧠 Predicted Score Range")
 
-# Display prediction
-st.markdown(f"### 🧠 Predicted Score Range")
-st.markdown(f"Based on your answers, we think this week's movie score will be: **{prediction}**")
+if "Q1" in st.session_state and "Q2" in st.session_state and "Q3" in st.session_state:
+    q1_answer = st.session_state["Q1"]
+    q2_answer = st.session_state["Q2"]
+    q3_answer = st.session_state["Q3"]
+
+    if q1_answer == "No":
+        prediction = f"Less than {q1:.1f}"
+    elif q1_answer == "Yes" and q2_answer == "No":
+        prediction = f"Between {q1:.1f} and {q2:.1f}"
+    elif q2_answer == "Yes" and q3_answer == "No":
+        prediction = f"Between {q2:.1f} and {q3:.1f}"
+    elif all(ans == "Yes" for ans in [q1_answer, q2_answer, q3_answer]):
+        prediction = f"Greater than {q3:.1f}"
+    else:
+        prediction = "Unable to predict based on your answers."
+
+    prediction_placeholder.markdown(
+        f"Based on your answers, we think this week's movie score will be: **{prediction}**"
+    )
 
 with st.sidebar:
     st.markdown("## 🎬 Your Ratings")
