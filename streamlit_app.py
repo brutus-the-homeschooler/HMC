@@ -94,15 +94,25 @@ with st.sidebar:
             st.markdown(f"- **{row['official_title']}** {row['score']}")
     else:
         st.markdown("No ratings found.")
-# Create two columns: left empty, right for the "sidebar"
-_, right_col = st.columns([2, 1])  # You can adjust the ratio
 
-with right_col:
-    st.markdown("## 🔗 Movie Info")
+with st.sidebar:
+    st.markdown("## 🎬 Your Ratings")
 
-    for _, row in metadata.sort_values("movie_id").iterrows():
-        st.image(row["poster_url"], width=80)
-        st.markdown(f"**{row['official_title']}**")
-        st.markdown(f"[IMDb]({row['imdb_url']}) | [Wikipedia]({row['wiki_url']})")
-        st.markdown("---")
+    if not user_df.empty:
+        with st.container():
+            for _, row in user_df.sort_values(by="score", ascending=False).iterrows():
+                st.markdown(f"- **{row['official_title']}** ({row['score']}/10)")
+    else:
+        st.markdown("No ratings found.")
+
+    # Divider
+    st.markdown("---")
+
+    # Collapsible section for all movies
+    with st.expander("📚 Show All Movies", expanded=False):
+        for _, row in metadata.sort_values("movie_id").iterrows():
+            st.image(row["poster_url"], width=60)
+            st.markdown(f"**{row['official_title']}**")
+            st.markdown(f"[IMDb]({row['imdb_url']}) | [Wikipedia]({row['wiki_url']})")
+            st.markdown("---")
 
