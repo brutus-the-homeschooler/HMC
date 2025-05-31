@@ -4,7 +4,8 @@ import pandas as pd
 
 # Load data
 ratings = pd.read_csv("ratings.csv")
-metadata = pd.read_csv("metadata.csv")
+metadata = pd.read_csv("metadata.csv", encoding='utf-8')
+#metadata = pd.read_csv("metadata.csv")
 df = ratings.merge(metadata, on="movie_id")
 
 # Custom spooky CSS
