@@ -125,6 +125,13 @@ with st.sidebar:
         for _, row in metadata.sort_values("movie_id").iterrows():
             st.image(row["poster_url"], width=60)
             st.markdown(f"**{row['official_title']}**")
-            st.markdown(f"[IMDb]({row['imdb_url']}) | [Wikipedia]({row['wiki_url']})")
+        
+        # Conditional link builder
+            links = f"[IMDb]({row['imdb_url']}) | [Wikipedia]({row['wiki_url']})"
+            if pd.notna(row.get("osu_library_link")) and row["osu_library_link"].strip() != "":
+                links += f" | [📚 OSU Library]({row['osu_library_link']})"
+
+            st.markdown(links)
             st.markdown("---")
+
 
