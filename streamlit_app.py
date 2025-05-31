@@ -69,3 +69,13 @@ else:
 # Display prediction
 st.markdown(f"### 🧠 Predicted Score Range")
 st.markdown(f"Based on your answers, we think this week's movie score will be: **{prediction}**")
+
+with st.sidebar:
+    st.markdown("## 🎬 Your Ratings")
+
+    if not user_df.empty:
+        for _, row in user_df.sort_values(by="score", ascending=False).iterrows():
+            st.markdown(f"- **{row['official_title']}** ({row['score']}/10)")
+    else:
+        st.markdown("No ratings found.")
+
