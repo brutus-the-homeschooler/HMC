@@ -7,3 +7,63 @@ username,movie_id,movie_title,score
 "Dwyer, Jimmy",6,Blair Witch Project,7.6
 "Dwyer, Jimmy",8,Body Snatchers,6.8
 "Dwyer, Jimmy",9,Cube 2,3.9
+"Brewer, Brittany",2,Abigail,6
+"Brewer, Brittany",3,Alien,8
+"Brewer, Brittany",4,Babadook,6
+"Brewer, Brittany",5,Black Christmas (2019),1
+"Brewer, Brittany",6,Blair Witch Project,9.8
+"Brewer, Brittany",8,Body Snatchers,7
+"Brewer, Brittany",9,Cube 2,1
+"Gomez, Jesus",1,28 Days Later,5.5
+"Gomez, Jesus",2,Abigail,5.5
+"Gomez, Jesus",3,Alien,8
+"Gomez, Jesus",4,Babadook,8
+"Gomez, Jesus",5,Black Christmas (2019),4.5
+"Gomez, Jesus",6,Blair Witch Project,7
+"Gomez, Jesus",8,Body Snatchers,7.5
+"Gomez, Jesus",9,Cube 2,2
+"Gross, Anthony",1,28 Days Later,7.8
+"Gross, Anthony",2,Abigail,5.8
+"Gross, Anthony",3,Alien,7.3
+"Gross, Anthony",4,Babadook,6.7
+"Gross, Anthony",5,Black Christmas (2019),5.5
+"Gross, Anthony",6,Blair Witch Project,6.6
+"Gross, Anthony",8,Body Snatchers,3.8
+"Gross, Anthony",9,Cube 2,3
+"Kollmann, Molly",1,28 Days Later,7
+"Kollmann, Molly",2,Abigail,4.7
+"Kollmann, Molly",3,Alien,7.9
+"Kollmann, Molly",4,Babadook,6.7
+"Kollmann, Molly",8,Body Snatchers,6.9
+"McCann, Chris",1,28 Days Later,6.2
+"McCann, Chris",2,Abigail,7.1
+"McCann, Chris",3,Alien,6.2
+"McCann, Chris",4,Babadook,1.5
+"McCann, Chris",5,Black Christmas (2019),4.5
+"McCann, Chris",6,Blair Witch Project,5.7
+"McCann, Chris",8,Body Snatchers,6
+"McCann, Chris",9,Cube 2,3.6
+"Brilmyer, Cheryl",2,Abigail,6.8
+"Brilmyer, Cheryl",8,Body Snatchers,6.2
+"Brilmyer, Cheryl",9,Cube 2,3.9
+"Stevens, Drew",2,Abigail,6.5
+"Stevens, Drew",5,Black Christmas (2019),4
+"Stevens, Drew",8,Body Snatchers,7.1
+"Stevens, Drew",9,Cube 2,4.5
+"Vaughn, Michael",1,28 Days Later,7.8
+"Vaughn, Michael",2,Abigail,6.9
+"Vaughn, Michael",3,Alien,7.5
+"Vaughn, Michael",4,Babadook,7.2
+"Vaughn, Michael",5,Black Christmas (2019),4.2
+"Vaughn, Michael",8,Body Snatchers,7.7
+"Vaughn, Michael",9,Cube 2,4.1
+"Zubovich, Victoria",2,Abigail,4.1
+"Zubovich, Victoria",8,Body Snatchers,2
+"Zubovich, Victoria",9,Cube 2,2.4
+"Rader, Emma",4,Babadook,5
+"Rader, Emma",6,Blair Witch Project,8
+"Cline, Kyle",1,28 Days Later,7.3
+"Cline, Kyle",3,Alien,5.3
+"Cline, Kyle",4,Babadook,6.4
+"Cline, Kyle",6,Blair Witch Project,8.4
+"Cline, Kyle",8,Body Snatchers,5.1
