@@ -95,16 +95,6 @@ with st.sidebar:
     else:
         st.markdown("No ratings found.")
 
-with st.sidebar:
-    st.markdown("## 🎬 Your Ratings")
-
-    if not user_df.empty:
-        with st.container():
-            for _, row in user_df.sort_values(by="score", ascending=False).iterrows():
-                st.markdown(f"- **{row['official_title']}** ({row['score']}/10)")
-    else:
-        st.markdown("No ratings found.")
-
     # Divider
     st.markdown("---")
 
