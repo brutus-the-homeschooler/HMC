@@ -75,7 +75,7 @@ with st.sidebar:
 
     if not user_df.empty:
         for _, row in user_df.sort_values(by="score", ascending=False).iterrows():
-            st.markdown(f"- **{row['official_title']}** ({row['score']}/10)")
+            st.markdown(f"- **{row['official_title']}** {row['score']}")
     else:
         st.markdown("No ratings found.")
 
