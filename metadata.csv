@@ -1,0 +1,4 @@
+movie_id,official_title,year,director,rt_score,synopsis,imdb_url,wiki_url,poster_url
+001,The Babadook,2014,Jennifer Kent,98,A sinister presence haunts a grieving mother and her child.,https://www.imdb.com/title/tt2321549/,https://en.wikipedia.org/wiki/The_Babadook,https://image.tmdb.org/t/p/w500/sI4o4X1QTW1Yw0WcYYa9Jbjg3jU.jpg
+002,Hereditary,2018,Ari Aster,90,A family unravels terrifying secrets after their grandmother's death.,https://www.imdb.com/title/tt7784604/,https://en.wikipedia.org/wiki/Hereditary_(film),https://image.tmdb.org/t/p/w500/4G6FNNz7F1rEfQjK7pSpUbpQhDb.jpg
+003,Midsommar,2019,Ari Aster,83,A couple travels to Sweden for a fabled midsummer festival that turns into a nightmare.,https://www.imdb.com/title/tt8772262/,https://en.wikipedia.org/wiki/Midsommar_(film),https://image.tmdb.org/t/p/w500/7LEI8ulZzO5gy9Ww2NVCrKmHeDZ.jpg
