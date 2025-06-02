@@ -39,7 +39,7 @@ st.markdown("""
 st.markdown("<h1>🩸 Horror Movie Club 🧟</h1>", unsafe_allow_html=True)
 
 # User selector
-unlocked_users = ratings[ratings['unlock'] == 1]['username'].unique()
+unlocked_users = ratings[ratings['unlock'] == '1']['username'].unique()
 
 selected_user = st.selectbox("Select a user", unlocked_users)
 
