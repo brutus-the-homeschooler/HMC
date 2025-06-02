@@ -39,8 +39,11 @@ st.markdown("""
 st.markdown("<h1>🩸 Horror Movie Club 🧟</h1>", unsafe_allow_html=True)
 
 # User selector
-users = df['username'].unique()
-selected_user = st.selectbox("Select a user", users)
+unlocked_users = ratings[ratings['unlock'] == 1]['username'].unique()
+
+selected_user = st.selectbox("Select a user", unlocked_users)
+
+# Join and filter merged dataframe for selected user
 user_df = df[df['username'] == selected_user]
 # Get the current (latest) movie from metadata
 current_movie = metadata.loc[metadata['movie_id'].idxmax()]
