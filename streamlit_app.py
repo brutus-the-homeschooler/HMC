@@ -15,7 +15,7 @@ st.markdown("""
 
 # Load data
 ratings = pd.read_csv("ratings.csv")
-metadata = pd.read_csv("metadata.csv")
+metadata = pd.read_csv("metadata.csv", encoding="ISO-8859-1")
 df = ratings.merge(metadata, on="movie_id")
 
 # Custom spooky CSS
