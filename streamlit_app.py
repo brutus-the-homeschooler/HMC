@@ -55,7 +55,15 @@ st.markdown(f"### **{current_movie['official_title']}**")
 st.markdown(f"**Synopsis:** _{current_movie['synopsis']}_")
 
 # Links
-st.markdown(f"[🎬 IMDb]({current_movie['imdb_url']}) &nbsp;&nbsp;|&nbsp;&nbsp; [📚 Wikipedia]({current_movie['wiki_url']}) &nbsp;&nbsp;|&nbsp;&nbsp; [▶️ Watch Trailer]({current_movie['trailer_url']})", unsafe_allow_html=True)
+# Links as Markdown
+st.markdown(
+    f"[🎬 IMDb]({current_movie['imdb_url']}) &nbsp;&nbsp;|&nbsp;&nbsp; [📚 Wikipedia]({current_movie['wiki_url']})",
+    unsafe_allow_html=True
+)
+
+# Embed YouTube trailer
+st.video(current_movie["trailer_url"])
+
 
 prediction_placeholder = st.empty()  # Reserve a space for prediction text
 
