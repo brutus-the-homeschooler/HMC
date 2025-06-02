@@ -134,7 +134,7 @@ with st.sidebar:
     # Collapsible section for all movies
     with st.expander("📚 Show All Movies", expanded=False):
         for _, row in metadata.sort_values("movie_id").iterrows():
-            st.image(row["poster_url"], width=200, height=350)
+            st.image(row["poster_url"], width=100, height=250)
             st.markdown(f"**{row['official_title']}**")
         
         # Conditional link builder
