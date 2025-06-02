@@ -1,69 +1,595 @@
-username,movie_id,movie_title,score
-"Dwyer, Jimmy",1,28 Days Later,6.6
-"Dwyer, Jimmy",2,Abigail,6.5
-"Dwyer, Jimmy",3,Alien,7.2
-"Dwyer, Jimmy",4,Babadook,5.6
-"Dwyer, Jimmy",5,Black Christmas (2019),4.2
-"Dwyer, Jimmy",6,Blair Witch Project,7.6
-"Dwyer, Jimmy",8,Body Snatchers,6.8
-"Dwyer, Jimmy",9,Cube 2,3.9
-"Brewer, Brittany",2,Abigail,6
-"Brewer, Brittany",3,Alien,8
-"Brewer, Brittany",4,Babadook,6
-"Brewer, Brittany",5,Black Christmas (2019),1
-"Brewer, Brittany",6,Blair Witch Project,9.8
-"Brewer, Brittany",8,Body Snatchers,7
-"Brewer, Brittany",9,Cube 2,1
-"Gomez, Jesus",1,28 Days Later,5.5
-"Gomez, Jesus",2,Abigail,5.5
-"Gomez, Jesus",3,Alien,8
-"Gomez, Jesus",4,Babadook,8
-"Gomez, Jesus",5,Black Christmas (2019),4.5
-"Gomez, Jesus",6,Blair Witch Project,7
-"Gomez, Jesus",8,Body Snatchers,7.5
-"Gomez, Jesus",9,Cube 2,2
-"Gross, Anthony",1,28 Days Later,7.8
-"Gross, Anthony",2,Abigail,5.8
-"Gross, Anthony",3,Alien,7.3
-"Gross, Anthony",4,Babadook,6.7
-"Gross, Anthony",5,Black Christmas (2019),5.5
-"Gross, Anthony",6,Blair Witch Project,6.6
-"Gross, Anthony",8,Body Snatchers,3.8
-"Gross, Anthony",9,Cube 2,3
-"Kollmann, Molly",1,28 Days Later,7
-"Kollmann, Molly",2,Abigail,4.7
-"Kollmann, Molly",3,Alien,7.9
-"Kollmann, Molly",4,Babadook,6.7
-"Kollmann, Molly",8,Body Snatchers,6.9
-"McCann, Chris",1,28 Days Later,6.2
-"McCann, Chris",2,Abigail,7.1
-"McCann, Chris",3,Alien,6.2
-"McCann, Chris",4,Babadook,1.5
-"McCann, Chris",5,Black Christmas (2019),4.5
-"McCann, Chris",6,Blair Witch Project,5.7
-"McCann, Chris",8,Body Snatchers,6
-"McCann, Chris",9,Cube 2,3.6
-"Brilmyer, Cheryl",2,Abigail,6.8
-"Brilmyer, Cheryl",8,Body Snatchers,6.2
-"Brilmyer, Cheryl",9,Cube 2,3.9
-"Stevens, Drew",2,Abigail,6.5
-"Stevens, Drew",5,Black Christmas (2019),4
-"Stevens, Drew",8,Body Snatchers,7.1
-"Stevens, Drew",9,Cube 2,4.5
-"Vaughn, Michael",1,28 Days Later,7.8
-"Vaughn, Michael",2,Abigail,6.9
-"Vaughn, Michael",3,Alien,7.5
-"Vaughn, Michael",4,Babadook,7.2
-"Vaughn, Michael",5,Black Christmas (2019),4.2
-"Vaughn, Michael",8,Body Snatchers,7.7
-"Vaughn, Michael",9,Cube 2,4.1
-"Zubovich, Victoria",2,Abigail,4.1
-"Zubovich, Victoria",8,Body Snatchers,2
-"Zubovich, Victoria",9,Cube 2,2.4
-"Rader, Emma",4,Babadook,5
-"Rader, Emma",6,Blair Witch Project,8
-"Cline, Kyle",1,28 Days Later,7.3
-"Cline, Kyle",3,Alien,5.3
-"Cline, Kyle",4,Babadook,6.4
-"Cline, Kyle",6,Blair Witch Project,8.4
-"Cline, Kyle",8,Body Snatchers,5.1
+username,movie_id,movie_title,score,Unlock
+Brittany Brewer,22,10 Cloverfield Lane,5.5,0
+Brittany Brewer,64,Abigail,6,0
+Brittany Brewer,23,Alien,8,0
+Brittany Brewer,52,Amityville Horror,5.9,0
+Brittany Brewer,3,Babadook,6,0
+Brittany Brewer,13,Babysitter Killer Queen,1,0
+Brittany Brewer,26,Black Christmas,8,0
+Brittany Brewer,71,Black Christmas (2019),1,0
+Brittany Brewer,53,Blair Witch Project,9.8,0
+Brittany Brewer,79,Bodies,7.1,0
+Brittany Brewer,63,Body Snatchers,7,0
+Brittany Brewer,27,Child's Play,6.2,0
+Brittany Brewer,20,Creep,7.5,0
+Brittany Brewer,69,Cube 2,1,0
+Brittany Brewer,42,Dead Silence,6,0
+Brittany Brewer,38,Deborah Logan,6,0
+Brittany Brewer,58,Escape Room,4.5,0
+Brittany Brewer,45,Evil Dead Rise,5,0
+Brittany Brewer,76,Fear Street 1,5,0
+Brittany Brewer,77,Fear Street 2,7.5,0
+Brittany Brewer,78,Fear Street 3,7.7,0
+Brittany Brewer,46,Friday The 13th,7,0
+Brittany Brewer,60,Get Out,8.9,0
+Brittany Brewer,67,Grave Encounters,5.1,0
+Brittany Brewer,48,Halloween,8.3,0
+Brittany Brewer,14,Hereditary,9.5,0
+Brittany Brewer,17,Hills Have Eyes,3.5,0
+Brittany Brewer,33,His House,6.1,0
+Brittany Brewer,72,House of 1000 Corpses,4,0
+Brittany Brewer,74,I Still Know,6.5,0
+Brittany Brewer,55,It,8.9,0
+Brittany Brewer,43,Jeepers Creepers,8,0
+Brittany Brewer,57,Jennifer's Body,9.1,0
+Brittany Brewer,25,Krampus,2,0
+Brittany Brewer,73,Last Summer,6.2,0
+Brittany Brewer,15,Maximum Overdrive,3.2,0
+Brittany Brewer,80,Midsommar,8.9,0
+Brittany Brewer,54,My Bloody Valentine,2.8,0
+Brittany Brewer,61,Night Swim,4.5,0
+Brittany Brewer,81,Nightmare on Elm Street,6.9,0
+Brittany Brewer,41,Paranormal Activity,3.5,0
+Brittany Brewer,40,Parasite,8,0
+Brittany Brewer,75,Poltergeist,7.8,0
+Brittany Brewer,65,Ready or Not,7.4,0
+Brittany Brewer,51,Rec,6.3,0
+Brittany Brewer,62,Rosemary's Baby,7,0
+Brittany Brewer,34,Scream,10,0
+Brittany Brewer,35,Scream 2,8.2,0
+Brittany Brewer,59,See No Evil,1.8,0
+Brittany Brewer,44,Sinister,8.9,0
+Brittany Brewer,32,Suspiria,4.1,0
+Brittany Brewer,82,Texas Chainsaw,7.7,0
+Brittany Brewer,56,Thanksgiving,2,0
+Brittany Brewer,21,The Black Phone,4,0
+Brittany Brewer,5,The Conjuring,8.1,0
+Brittany Brewer,39,The Conjuring 2,3,0
+Brittany Brewer,68,The Cube,2,0
+Brittany Brewer,28,The Descent,6.4,0
+Brittany Brewer,47,The Exorcist,7.1,0
+Brittany Brewer,70,The Haunting,6.4,0
+Brittany Brewer,36,The Menu,7.2,0
+Brittany Brewer,24,The Purge,4.5,0
+Brittany Brewer,19,The Ring,6,0
+Brittany Brewer,29,The Shining,5.9,0
+Brittany Brewer,66,The Sixth Sense,8.3,0
+Brittany Brewer,18,The Thing,8,0
+Brittany Brewer,31,The Visit,5.1,0
+Brittany Brewer,16,The VVitch,6.4,0
+Brittany Brewer,37,The Wailing,5.6,0
+Brittany Brewer,49,Train to Busan,9,0
+Brittany Brewer,30,You Should Have Left,6.8,0
+Jesus Gomez,22,10 Cloverfield Lane,5.5,0
+Jesus Gomez,12,28 Days Later,5.5,0
+Jesus Gomez,64,Abigail,5.5,0
+Jesus Gomez,23,Alien,8,0
+Jesus Gomez,52,Amityville Horror,5,0
+Jesus Gomez,3,Babadook,8,0
+Jesus Gomez,13,Babysitter Killer Queen,6,0
+Jesus Gomez,11,Banshee Chapter,4,0
+Jesus Gomez,1,Belko Experiment,5.5,0
+Jesus Gomez,26,Black Christmas,7.5,0
+Jesus Gomez,71,Black Christmas (2019),4.5,0
+Jesus Gomez,53,Blair Witch Project,7,0
+Jesus Gomez,4,Blood Red Sky,5,0
+Jesus Gomez,79,Bodies,6.5,0
+Jesus Gomez,63,Body Snatchers,7.5,0
+Jesus Gomez,27,Child's Play,7,0
+Jesus Gomez,20,Creep,7,0
+Jesus Gomez,69,Cube 2,2,0
+Jesus Gomez,42,Dead Silence,2.5,0
+Jesus Gomez,38,Deborah Logan,4.5,0
+Jesus Gomez,9,Dragonfly,2,0
+Jesus Gomez,58,Escape Room,5,0
+Jesus Gomez,45,Evil Dead Rise,6.5,0
+Jesus Gomez,76,Fear Street 1,5.5,0
+Jesus Gomez,77,Fear Street 2,6.5,0
+Jesus Gomez,78,Fear Street 3,6,0
+Jesus Gomez,46,Friday The 13th,7,0
+Jesus Gomez,60,Get Out,8.5,0
+Jesus Gomez,7,Ginger Snaps,5,0
+Jesus Gomez,67,Grave Encounters,5.5,0
+Jesus Gomez,48,Halloween,8.5,0
+Jesus Gomez,14,Hereditary,7.5,0
+Jesus Gomez,17,Hills Have Eyes,6,0
+Jesus Gomez,33,His House,7,0
+Jesus Gomez,72,House of 1000 Corpses,4.5,0
+Jesus Gomez,74,I Still Know,5,0
+Jesus Gomez,55,It,6,0
+Jesus Gomez,43,Jeepers Creepers,6,0
+Jesus Gomez,57,Jennifer's Body,6,0
+Jesus Gomez,25,Krampus,6.5,0
+Jesus Gomez,73,Last Summer,5.5,0
+Jesus Gomez,15,Maximum Overdrive,2,0
+Jesus Gomez,80,Midsommar,7.5,0
+Jesus Gomez,54,My Bloody Valentine,2,0
+Jesus Gomez,61,Night Swim,2.5,0
+Jesus Gomez,81,Nightmare on Elm Street,8.5,0
+Jesus Gomez,41,Paranormal Activity,4.5,0
+Jesus Gomez,40,Parasite,7,0
+Jesus Gomez,75,Poltergeist,7,0
+Jesus Gomez,65,Ready or Not,7.5,0
+Jesus Gomez,51,Rec,7,0
+Jesus Gomez,62,Rosemary's Baby,6,0
+Jesus Gomez,34,Scream,9,0
+Jesus Gomez,35,Scream 2,7.5,0
+Jesus Gomez,59,See No Evil,2,0
+Jesus Gomez,44,Sinister,6,0
+Jesus Gomez,2,Stir of Echoes,6,0
+Jesus Gomez,32,Suspiria,5,0
+Jesus Gomez,82,Texas Chainsaw,6.5,0
+Jesus Gomez,56,Thanksgiving,4.5,0
+Jesus Gomez,21,The Black Phone,5.5,0
+Jesus Gomez,5,The Conjuring,7.5,0
+Jesus Gomez,39,The Conjuring 2,6.5,0
+Jesus Gomez,68,The Cube,4.5,0
+Jesus Gomez,28,The Descent,6,0
+Jesus Gomez,47,The Exorcist,9,0
+Jesus Gomez,70,The Haunting,6,0
+Jesus Gomez,50,The Lodge,5,0
+Jesus Gomez,36,The Menu,6.5,0
+Jesus Gomez,10,The Others,8.5,0
+Jesus Gomez,24,The Purge,6,0
+Jesus Gomez,19,The Ring,6,0
+Jesus Gomez,6,The Ritual,5,0
+Jesus Gomez,29,The Shining,9,0
+Jesus Gomez,66,The Sixth Sense,8.5,0
+Jesus Gomez,8,The Strangers,4,0
+Jesus Gomez,18,The Thing,6.5,0
+Jesus Gomez,31,The Visit,6,0
+Jesus Gomez,16,The VVitch,7,0
+Jesus Gomez,37,The Wailing,7,0
+Jesus Gomez,49,Train to Busan,8.5,0
+Jesus Gomez,30,You Should Have Left,2.5,0
+Anthony Gross,22,10 Cloverfield Lane,7.2,0
+Anthony Gross,12,28 Days Later,7.8,0
+Anthony Gross,64,Abigail,5.8,0
+Anthony Gross,23,Alien,7.3,0
+Anthony Gross,52,Amityville Horror,5.7,0
+Anthony Gross,3,Babadook,6.7,0
+Anthony Gross,13,Babysitter Killer Queen,4.8,0
+Anthony Gross,11,Banshee Chapter,5.6,0
+Anthony Gross,1,Belko Experiment,5,0
+Anthony Gross,26,Black Christmas,4.8,0
+Anthony Gross,71,Black Christmas (2019),5.5,0
+Anthony Gross,53,Blair Witch Project,6.6,0
+Anthony Gross,4,Blood Red Sky,5.7,0
+Anthony Gross,79,Bodies,6.4,0
+Anthony Gross,63,Body Snatchers,3.8,0
+Anthony Gross,27,Child's Play,4,0
+Anthony Gross,20,Creep,1.5,0
+Anthony Gross,69,Cube 2,3,0
+Anthony Gross,42,Dead Silence,4.8,0
+Anthony Gross,38,Deborah Logan,5.8,0
+Anthony Gross,9,Dragonfly,2,0
+Anthony Gross,58,Escape Room,5,0
+Anthony Gross,45,Evil Dead Rise,6,0
+Anthony Gross,76,Fear Street 1,7,0
+Anthony Gross,77,Fear Street 2,7,0
+Anthony Gross,78,Fear Street 3,6.7,0
+Anthony Gross,46,Friday The 13th,5.5,0
+Anthony Gross,60,Get Out,8.1,0
+Anthony Gross,7,Ginger Snaps,4.5,0
+Anthony Gross,67,Grave Encounters,5.5,0
+Anthony Gross,48,Halloween,8.1,0
+Anthony Gross,14,Hereditary,9,0
+Anthony Gross,17,Hills Have Eyes,7.6,0
+Anthony Gross,33,His House,5.7,0
+Anthony Gross,72,House of 1000 Corpses,4.5,0
+Anthony Gross,74,I Still Know,5,0
+Anthony Gross,55,It,6.8,0
+Anthony Gross,43,Jeepers Creepers,8.5,0
+Anthony Gross,57,Jennifer's Body,6.5,0
+Anthony Gross,25,Krampus,7.8,0
+Anthony Gross,73,Last Summer,5.7,0
+Anthony Gross,15,Maximum Overdrive,3,0
+Anthony Gross,80,Midsommar,7.9,0
+Anthony Gross,54,My Bloody Valentine,5,0
+Anthony Gross,61,Night Swim,4.5,0
+Anthony Gross,41,Paranormal Activity,6.9,0
+Anthony Gross,40,Parasite,3,0
+Anthony Gross,75,Poltergeist,5.8,0
+Anthony Gross,65,Ready or Not,6.6,0
+Anthony Gross,51,Rec,6.2,0
+Anthony Gross,62,Rosemary's Baby,6,0
+Anthony Gross,34,Scream,8,0
+Anthony Gross,35,Scream 2,7.4,0
+Anthony Gross,59,See No Evil,4.8,0
+Anthony Gross,44,Sinister,6.1,0
+Anthony Gross,2,Stir of Echoes,5.5,0
+Anthony Gross,32,Suspiria,4.7,0
+Anthony Gross,82,Texas Chainsaw,4.5,0
+Anthony Gross,56,Thanksgiving,6.1,0
+Anthony Gross,21,The Black Phone,5.9,0
+Anthony Gross,5,The Conjuring,8.7,0
+Anthony Gross,39,The Conjuring 2,7.3,0
+Anthony Gross,68,The Cube,6,0
+Anthony Gross,28,The Descent,7,0
+Anthony Gross,47,The Exorcist,6.2,0
+Anthony Gross,70,The Haunting,4,0
+Anthony Gross,50,The Lodge,5.7,0
+Anthony Gross,36,The Menu,6.5,0
+Anthony Gross,10,The Others,7.5,0
+Anthony Gross,24,The Purge,6.5,0
+Anthony Gross,19,The Ring,7,0
+Anthony Gross,6,The Ritual,8,0
+Anthony Gross,29,The Shining,7.7,0
+Anthony Gross,66,The Sixth Sense,6.7,0
+Anthony Gross,8,The Strangers,7.9,0
+Anthony Gross,18,The Thing,5,0
+Anthony Gross,31,The Visit,5.8,0
+Anthony Gross,16,The VVitch,8.8,0
+Anthony Gross,37,The Wailing,6.7,0
+Anthony Gross,49,Train to Busan,7.2,0
+Anthony Gross,30,You Should Have Left,3.7,0
+Molly Kollmann,22,10 Cloverfield Lane,6.3,0
+Molly Kollmann,12,28 Days Later,7,0
+Molly Kollmann,64,Abigail,4.7,0
+Molly Kollmann,23,Alien,7.9,0
+Molly Kollmann,52,Amityville Horror,4.2,0
+Molly Kollmann,3,Babadook,6.7,0
+Molly Kollmann,13,Babysitter Killer Queen,5.2,0
+Molly Kollmann,1,Belko Experiment,2,0
+Molly Kollmann,4,Blood Red Sky,2.5,0
+Molly Kollmann,79,Bodies,5.6,0
+Molly Kollmann,63,Body Snatchers,6.9,0
+Molly Kollmann,27,Child's Play,6.8,0
+Molly Kollmann,20,Creep,5,0
+Molly Kollmann,38,Deborah Logan,5,0
+Molly Kollmann,9,Dragonfly,4,0
+Molly Kollmann,58,Escape Room,4.2,0
+Molly Kollmann,76,Fear Street 1,4,0
+Molly Kollmann,77,Fear Street 2,5.2,0
+Molly Kollmann,46,Friday The 13th,7.5,0
+Molly Kollmann,60,Get Out,8.9,0
+Molly Kollmann,7,Ginger Snaps,1.5,0
+Molly Kollmann,48,Halloween,8.2,0
+Molly Kollmann,14,Hereditary,9,0
+Molly Kollmann,17,Hills Have Eyes,5.3,0
+Molly Kollmann,33,His House,5,0
+Molly Kollmann,72,House of 1000 Corpses,2.8,0
+Molly Kollmann,55,It,7,0
+Molly Kollmann,43,Jeepers Creepers,5.8,0
+Molly Kollmann,57,Jennifer's Body,7.5,0
+Molly Kollmann,25,Krampus,5,0
+Molly Kollmann,73,Last Summer,5.3,0
+Molly Kollmann,80,Midsommar,7.3,0
+Molly Kollmann,54,My Bloody Valentine,3.5,0
+Molly Kollmann,61,Night Swim,3.8,0
+Molly Kollmann,81,Nightmare on Elm Street,6.8,0
+Molly Kollmann,41,Paranormal Activity,4.8,0
+Molly Kollmann,40,Parasite,5,0
+Molly Kollmann,75,Poltergeist,7.4,0
+Molly Kollmann,51,Rec,5,0
+Molly Kollmann,62,Rosemary's Baby,6.8,0
+Molly Kollmann,34,Scream,8,0
+Molly Kollmann,59,See No Evil,3,0
+Molly Kollmann,44,Sinister,5.8,0
+Molly Kollmann,2,Stir of Echoes,6.3,0
+Molly Kollmann,32,Suspiria,4,0
+Molly Kollmann,56,Thanksgiving,6,0
+Molly Kollmann,21,The Black Phone,4.4,0
+Molly Kollmann,5,The Conjuring,8.3,0
+Molly Kollmann,39,The Conjuring 2,8.5,0
+Molly Kollmann,68,The Cube,4.7,0
+Molly Kollmann,47,The Exorcist,7,0
+Molly Kollmann,70,The Haunting,4,0
+Molly Kollmann,50,The Lodge,4.2,0
+Molly Kollmann,36,The Menu,6,0
+Molly Kollmann,10,The Others,6.9,0
+Molly Kollmann,24,The Purge,6.2,0
+Molly Kollmann,19,The Ring,7.7,0
+Molly Kollmann,6,The Ritual,7.7,0
+Molly Kollmann,29,The Shining,7,0
+Molly Kollmann,66,The Sixth Sense,7.5,0
+Molly Kollmann,8,The Strangers,6.9,0
+Molly Kollmann,18,The Thing,7.5,0
+Molly Kollmann,31,The Visit,6,0
+Molly Kollmann,16,The VVitch,7,0
+Molly Kollmann,30,You Should Have Left,3.3,0
+Chris McCann,22,10 Cloverfield Lane,7.5,0
+Chris McCann,12,28 Days Later,6.2,0
+Chris McCann,64,Abigail,7.1,0
+Chris McCann,23,Alien,6.2,0
+Chris McCann,52,Amityville Horror,4.6,0
+Chris McCann,3,Babadook,1.5,0
+Chris McCann,13,Babysitter Killer Queen,5.5,0
+Chris McCann,11,Banshee Chapter,5,0
+Chris McCann,1,Belko Experiment,5.5,0
+Chris McCann,26,Black Christmas,3.5,0
+Chris McCann,71,Black Christmas (2019),4.5,0
+Chris McCann,53,Blair Witch Project,5.7,0
+Chris McCann,4,Blood Red Sky,6.3,0
+Chris McCann,79,Bodies,6.1,0
+Chris McCann,63,Body Snatchers,6,0
+Chris McCann,27,Child's Play,5.6,0
+Chris McCann,20,Creep,0.9,0
+Chris McCann,69,Cube 2,3.6,0
+Chris McCann,42,Dead Silence,6,0
+Chris McCann,38,Deborah Logan,5.9,0
+Chris McCann,9,Dragonfly,3.5,0
+Chris McCann,58,Escape Room,5.6,0
+Chris McCann,45,Evil Dead Rise,4.9,0
+Chris McCann,76,Fear Street 1,7.7,0
+Chris McCann,77,Fear Street 2,8,0
+Chris McCann,78,Fear Street 3,8.1,0
+Chris McCann,46,Friday The 13th,5.5,0
+Chris McCann,60,Get Out,7.7,0
+Chris McCann,7,Ginger Snaps,1,0
+Chris McCann,67,Grave Encounters,5.7,0
+Chris McCann,48,Halloween,7.3,0
+Chris McCann,14,Hereditary,8.5,0
+Chris McCann,17,Hills Have Eyes,7.3,0
+Chris McCann,33,His House,5.5,0
+Chris McCann,72,House of 1000 Corpses,4,0
+Chris McCann,74,I Still Know,6.3,0
+Chris McCann,55,It,7.3,0
+Chris McCann,43,Jeepers Creepers,7.5,0
+Chris McCann,57,Jennifer's Body,5.7,0
+Chris McCann,25,Krampus,6.4,0
+Chris McCann,73,Last Summer,6,0
+Chris McCann,15,Maximum Overdrive,4,0
+Chris McCann,80,Midsommar,3.5,0
+Chris McCann,54,My Bloody Valentine,4.7,0
+Chris McCann,61,Night Swim,3.5,0
+Chris McCann,81,Nightmare on Elm Street,6,0
+Chris McCann,41,Paranormal Activity,6.3,0
+Chris McCann,40,Parasite,3,0
+Chris McCann,75,Poltergeist,5.7,0
+Chris McCann,65,Ready or Not,7.2,0
+Chris McCann,51,Rec,8.4,0
+Chris McCann,62,Rosemary's Baby,5.1,0
+Chris McCann,34,Scream,10,0
+Chris McCann,35,Scream 2,8.5,0
+Chris McCann,59,See No Evil,4,0
+Chris McCann,44,Sinister,8.9,0
+Chris McCann,2,Stir of Echoes,6.2,0
+Chris McCann,32,Suspiria,3.9,0
+Chris McCann,82,Texas Chainsaw,5,0
+Chris McCann,56,Thanksgiving,6.2,0
+Chris McCann,21,The Black Phone,6.9,0
+Chris McCann,5,The Conjuring,8.5,0
+Chris McCann,39,The Conjuring 2,8.6,0
+Chris McCann,68,The Cube,5.7,0
+Chris McCann,28,The Descent,8.2,0
+Chris McCann,47,The Exorcist,6.4,0
+Chris McCann,50,The Lodge,4.4,0
+Chris McCann,36,The Menu,5.5,0
+Chris McCann,10,The Others,7.5,0
+Chris McCann,24,The Purge,5,0
+Chris McCann,19,The Ring,7.9,0
+Chris McCann,6,The Ritual,7,0
+Chris McCann,66,The Sixth Sense,7.3,0
+Chris McCann,8,The Strangers,6.9,0
+Chris McCann,18,The Thing,6.4,0
+Chris McCann,31,The Visit,7.3,0
+Chris McCann,16,The VVitch,5,0
+Chris McCann,37,The Wailing,7.3,0
+Chris McCann,49,Train to Busan,8.6,0
+Chris McCann,30,You Should Have Left,3.7,0
+Cheryl Brilmyer,64,Abigail,6.8,0
+Cheryl Brilmyer,79,Bodies,4.5,0
+Cheryl Brilmyer,63,Body Snatchers,6.2,0
+Cheryl Brilmyer,69,Cube 2,3.9,0
+Cheryl Brilmyer,58,Escape Room,5,0
+Cheryl Brilmyer,76,Fear Street 1,4.5,0
+Cheryl Brilmyer,77,Fear Street 2,5.5,0
+Cheryl Brilmyer,78,Fear Street 3,5.7,0
+Cheryl Brilmyer,60,Get Out,6.5,0
+Cheryl Brilmyer,67,Grave Encounters,4.2,0
+Cheryl Brilmyer,72,House of 1000 Corpses,2.8,0
+Cheryl Brilmyer,74,I Still Know,4.9,0
+Cheryl Brilmyer,73,Last Summer,6.5,0
+Cheryl Brilmyer,80,Midsommar,6.2,0
+Cheryl Brilmyer,61,Night Swim,2.6,0
+Cheryl Brilmyer,81,Nightmare on Elm Street,6.4,0
+Cheryl Brilmyer,75,Poltergeist,6.8,0
+Cheryl Brilmyer,65,Ready or Not,4.8,0
+Cheryl Brilmyer,62,Rosemary's Baby,6.1,0
+Cheryl Brilmyer,59,See No Evil,3,0
+Cheryl Brilmyer,82,Texas Chainsaw,6.5,0
+Cheryl Brilmyer,68,The Cube,3.8,0
+Cheryl Brilmyer,70,The Haunting,5.8,0
+Cheryl Brilmyer,66,The Sixth Sense,7,0
+Jimmy Dwyer,12,28 Days Later,6.6,1
+Jimmy Dwyer,64,Abigail,6.5,1
+Jimmy Dwyer,23,Alien,7.2,1
+Jimmy Dwyer,3,Babadook,5.6,1
+Jimmy Dwyer,71,Black Christmas (2019),4.2,1
+Jimmy Dwyer,53,Blair Witch Project,7.6,1
+Jimmy Dwyer,79,Bodies,6.2,1
+Jimmy Dwyer,63,Body Snatchers,6.8,1
+Jimmy Dwyer,69,Cube 2,3.9,1
+Jimmy Dwyer,58,Escape Room,6.1,1
+Jimmy Dwyer,76,Fear Street 1,6.6,1
+Jimmy Dwyer,77,Fear Street 2,6.8,1
+Jimmy Dwyer,78,Fear Street 3,6.9,1
+Jimmy Dwyer,60,Get Out,8.3,1
+Jimmy Dwyer,67,Grave Encounters,4.7,1
+Jimmy Dwyer,48,Halloween,7.6,1
+Jimmy Dwyer,72,House of 1000 Corpses,4.8,1
+Jimmy Dwyer,74,I Still Know,3.8,1
+Jimmy Dwyer,55,It,7.2,1
+Jimmy Dwyer,73,Last Summer,5.3,1
+Jimmy Dwyer,80,Midsommar,7,1
+Jimmy Dwyer,61,Night Swim,5.3,1
+Jimmy Dwyer,81,Nightmare on Elm Street,8.2,1
+Jimmy Dwyer,41,Paranormal Activity,6.3,1
+Jimmy Dwyer,40,Parasite,6.6,1
+Jimmy Dwyer,75,Poltergeist,7.2,1
+Jimmy Dwyer,65,Ready or Not,6.8,1
+Jimmy Dwyer,62,Rosemary's Baby,6.8,1
+Jimmy Dwyer,34,Scream,7.3,1
+Jimmy Dwyer,35,Scream 2,6.2,1
+Jimmy Dwyer,59,See No Evil,1.2,1
+Jimmy Dwyer,82,Texas Chainsaw,7.8,1
+Jimmy Dwyer,68,The Cube,4.1,1
+Jimmy Dwyer,47,The Exorcist,7.4,1
+Jimmy Dwyer,70,The Haunting,7,1
+Jimmy Dwyer,24,The Purge,5.4,1
+Jimmy Dwyer,19,The Ring,7,1
+Jimmy Dwyer,29,The Shining,7.7,1
+Jimmy Dwyer,66,The Sixth Sense,8,1
+Jimmy Dwyer,8,The Strangers,6.5,1
+Jimmy Dwyer,49,Train to Busan,6,1
+Drew Stevens,64,Abigail,6.5,0
+Drew Stevens,71,Black Christmas (2019),4,0
+Drew Stevens,79,Bodies,6.5,0
+Drew Stevens,63,Body Snatchers,7.1,0
+Drew Stevens,69,Cube 2,4.5,0
+Drew Stevens,58,Escape Room,4.5,0
+Drew Stevens,76,Fear Street 1,5.8,0
+Drew Stevens,77,Fear Street 2,6.8,0
+Drew Stevens,78,Fear Street 3,6.3,0
+Drew Stevens,60,Get Out,7.8,0
+Drew Stevens,67,Grave Encounters,4.4,0
+Drew Stevens,72,House of 1000 Corpses,5.5,0
+Drew Stevens,74,I Still Know,5.8,0
+Drew Stevens,73,Last Summer,6.1,0
+Drew Stevens,61,Night Swim,6.8,0
+Drew Stevens,81,Nightmare on Elm Street,4.5,0
+Drew Stevens,75,Poltergeist,5.2,0
+Drew Stevens,65,Ready or Not,6.8,0
+Drew Stevens,62,Rosemary's Baby,8.2,0
+Drew Stevens,59,See No Evil,4.1,0
+Drew Stevens,68,The Cube,4.8,0
+Drew Stevens,66,The Sixth Sense,6.2,0
+Michael Vaughn,12,28 Days Later,7.8,0
+Michael Vaughn,64,Abigail,6.9,0
+Michael Vaughn,23,Alien,7.5,0
+Michael Vaughn,3,Babadook,7.2,0
+Michael Vaughn,71,Black Christmas (2019),4.2,0
+Michael Vaughn,63,Body Snatchers,7.7,0
+Michael Vaughn,69,Cube 2,4.1,0
+Michael Vaughn,58,Escape Room,5,0
+Michael Vaughn,76,Fear Street 1,4.5,0
+Michael Vaughn,77,Fear Street 2,4.5,0
+Michael Vaughn,78,Fear Street 3,5.7,0
+Michael Vaughn,60,Get Out,7.4,0
+Michael Vaughn,67,Grave Encounters,1.2,0
+Michael Vaughn,72,House of 1000 Corpses,8,0
+Michael Vaughn,74,I Still Know,5.5,0
+Michael Vaughn,73,Last Summer,5.4,0
+Michael Vaughn,80,Midsommar,5.7,0
+Michael Vaughn,61,Night Swim,4.4,0
+Michael Vaughn,81,Nightmare on Elm Street,6.8,0
+Michael Vaughn,75,Poltergeist,8.2,0
+Michael Vaughn,65,Ready or Not,6,0
+Michael Vaughn,62,Rosemary's Baby,4.8,0
+Michael Vaughn,59,See No Evil,3.7,0
+Michael Vaughn,82,Texas Chainsaw,6.7,0
+Michael Vaughn,21,The Black Phone,7.5,0
+Michael Vaughn,68,The Cube,4.1,0
+Michael Vaughn,70,The Haunting,4.7,0
+Michael Vaughn,36,The Menu,7,0
+Michael Vaughn,29,The Shining,8.8,0
+Michael Vaughn,66,The Sixth Sense,7.9,0
+Victoria Zubovich,64,Abigail,4.1,0
+Victoria Zubovich,79,Bodies,2,0
+Victoria Zubovich,63,Body Snatchers,2,0
+Victoria Zubovich,69,Cube 2,2.4,0
+Victoria Zubovich,58,Escape Room,4,0
+Victoria Zubovich,76,Fear Street 1,5.8,0
+Victoria Zubovich,77,Fear Street 2,6,0
+Victoria Zubovich,78,Fear Street 3,7.7,0
+Victoria Zubovich,60,Get Out,7.9,0
+Victoria Zubovich,67,Grave Encounters,1,0
+Victoria Zubovich,14,Hereditary,1.8,0
+Victoria Zubovich,72,House of 1000 Corpses,3.8,0
+Victoria Zubovich,74,I Still Know,4.1,0
+Victoria Zubovich,73,Last Summer,5,0
+Victoria Zubovich,80,Midsommar,5.5,0
+Victoria Zubovich,61,Night Swim,3.6,0
+Victoria Zubovich,75,Poltergeist,3.3,0
+Victoria Zubovich,65,Ready or Not,6.8,0
+Victoria Zubovich,62,Rosemary's Baby,5.9,0
+Victoria Zubovich,59,See No Evil,3,0
+Victoria Zubovich,82,Texas Chainsaw,6.6,0
+Victoria Zubovich,68,The Cube,2.9,0
+Victoria Zubovich,66,The Sixth Sense,8.9,0
+Emma Rader,3,Babadook,5,0
+Emma Rader,53,Blair Witch Project,8,0
+Emma Rader,79,Bodies,6,0
+Emma Rader,76,Fear Street 1,7,0
+Emma Rader,77,Fear Street 2,7.5,0
+Emma Rader,78,Fear Street 3,7.3,0
+Emma Rader,60,Get Out,8,0
+Emma Rader,14,Hereditary,7.5,0
+Emma Rader,55,It,6.5,0
+Emma Rader,25,Krampus,6,0
+Emma Rader,80,Midsommar,9.5,0
+Emma Rader,81,Nightmare on Elm Street,6,0
+Emma Rader,41,Paranormal Activity,4.5,0
+Emma Rader,40,Parasite,8,0
+Emma Rader,75,Poltergeist,5.5,0
+Emma Rader,82,Texas Chainsaw,6,0
+Emma Rader,5,The Conjuring,8.5,0
+Emma Rader,39,The Conjuring 2,8,0
+Emma Rader,36,The Menu,7.8,0
+Emma Rader,24,The Purge,5,0
+Emma Rader,31,The Visit,4.5,0
+Emma Rader,16,The VVitch,4,0
+Emma Rader,49,Train to Busan,9,0
+Kyle Cline,22,10 Cloverfield Lane,7.1,0
+Kyle Cline,12,28 Days Later,7.3,0
+Kyle Cline,23,Alien,5.3,0
+Kyle Cline,3,Babadook,6.4,0
+Kyle Cline,13,Babysitter Killer Queen,7.5,0
+Kyle Cline,11,Banshee Chapter,5.2,0
+Kyle Cline,1,Belko Experiment,4.4,0
+Kyle Cline,26,Black Christmas,5.4,0
+Kyle Cline,53,Blair Witch Project,8.4,0
+Kyle Cline,4,Blood Red Sky,5.2,0
+Kyle Cline,63,Body Snatchers,5.1,0
+Kyle Cline,27,Child's Play,3.8,0
+Kyle Cline,20,Creep,8.3,0
+Kyle Cline,9,Dragonfly,1,0
+Kyle Cline,58,Escape Room,5.6,0
+Kyle Cline,60,Get Out,7.9,0
+Kyle Cline,7,Ginger Snaps,1.1,0
+Kyle Cline,67,Grave Encounters,3.4,0
+Kyle Cline,14,Hereditary,8,0
+Kyle Cline,17,Hills Have Eyes,5,0
+Kyle Cline,43,Jeepers Creepers,5.4,0
+Kyle Cline,25,Krampus,6.9,0
+Kyle Cline,15,Maximum Overdrive,4.3,0
+Kyle Cline,61,Night Swim,3.6,0
+Kyle Cline,41,Paranormal Activity,6.6,0
+Kyle Cline,65,Ready or Not,7.7,0
+Kyle Cline,51,Rec,6.3,0
+Kyle Cline,62,Rosemary's Baby,3.9,0
+Kyle Cline,34,Scream,6.4,0
+Kyle Cline,35,Scream 2,6.1,0
+Kyle Cline,59,See No Evil,3,0
+Kyle Cline,2,Stir of Echoes,6.1,0
+Kyle Cline,21,The Black Phone,7.3,0
+Kyle Cline,5,The Conjuring,9.1,0
+Kyle Cline,39,The Conjuring 2,6.6,0
+Kyle Cline,68,The Cube,7,0
+Kyle Cline,28,The Descent,7.4,0
+Kyle Cline,47,The Exorcist,8.3,0
+Kyle Cline,36,The Menu,6,0
+Kyle Cline,10,The Others,4.8,0
+Kyle Cline,24,The Purge,6.3,0
+Kyle Cline,19,The Ring,8,0
+Kyle Cline,6,The Ritual,7.6,0
+Kyle Cline,29,The Shining,7.8,0
+Kyle Cline,66,The Sixth Sense,6.6,0
+Kyle Cline,8,The Strangers,8.5,0
+Kyle Cline,18,The Thing,4.7,0
+Kyle Cline,31,The Visit,8.6,0
+Kyle Cline,16,The VVitch,5.3,0
+Kyle Cline,37,The Wailing,7.9,0
+Kyle Cline,49,Train to Busan,4.1,0
+Kyle Cline,30,You Should Have Left,4.5,0
