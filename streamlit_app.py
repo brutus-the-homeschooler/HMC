@@ -91,7 +91,7 @@ for label, quantile in [("Q1", q1), ("Q2", q2), ("Q3", q3)]:
     st.markdown(f"**Synopsis:** _{movie['synopsis']}_")
     st.markdown(f"[IMDb]({movie['imdb_url']}) | [Wikipedia]({movie['wiki_url']})")
     st.radio(f"Do you think this week's movie is better than *{movie['official_title']}*?", options=["---", "Yes", "No"],
-                key=key,
+                key=label,
                 index=0
                 )
 # Capture user answers from radios
