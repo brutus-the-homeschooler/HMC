@@ -180,7 +180,7 @@ with st.sidebar:
         line-height: 1.4;
     }
     ul.rating-list li strong {
-        font-size: 18px;
+        font-size: 36px;
         color: #FF4444;
     }
     </style>
