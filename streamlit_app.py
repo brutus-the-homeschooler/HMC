@@ -167,11 +167,39 @@ if all(ans == "Yes" for ans in [q1_answer, q2_answer, q3_answer]):
 with st.sidebar:
     st.markdown("## 🎬 Your Ratings")
 
+    # Add CSS styling
+    st.markdown("""
+    <style>
+    ul.rating-list {
+        padding-left: 20px;
+    }
+    ul.rating-list li {
+        margin-bottom: 8px;
+        list-style-type: "🎬 ";
+        font-size: 16px;
+        line-height: 1.4;
+    }
+    ul.rating-list li strong {
+        font-size: 18px;
+        color: #FF4444;
+    }
+    </style>
+    """, unsafe_allow_html=True)
+
     if not user_df.empty:
+        st.markdown('<ul class="rating-list">', unsafe_allow_html=True)
+
         for _, row in user_df.sort_values(by="score", ascending=False).iterrows():
-            st.markdown(f"- **{row['official_title']}** {row['score']}")
+            st.markdown(
+                f'<li title="Director: {row["director"]} | RT: {row["rt_score"]}%">'
+                f'<strong>{row["official_title"]}</strong> {row["score"]}</li>',
+                unsafe_allow_html=True
+            )
+
+        st.markdown('</ul>', unsafe_allow_html=True)
     else:
         st.markdown("No ratings found.")
+
 
     # Divider
     st.markdown("---")
