@@ -118,40 +118,47 @@ if "Q1" in st.session_state and "Q2" in st.session_state and "Q3" in st.session_
     prediction_placeholder.markdown(
         f"Based on your answers, we think this week's movie score will be: **{prediction}**"
     )
-    # BONUS LADDER: Only trigger if all three benchmark answers are "Yes"
-    if all(ans == "Yes" for ans in [q1_answer, q2_answer, q3_answer]):
-        st.markdown("#### 🔁 Let's Refine Your Score Prediction Even More...")
+if all(ans == "Yes" for ans in [q1_answer, q2_answer, q3_answer]):
+    st.markdown("#### 🔁 Let's Refine Your Score Prediction Even More...")
 
-        bonus_df = user_df[user_df['score'] > q3].copy()
+    bonus_df = user_df[user_df['score'] > q3].copy()
 
-        # Keep only the most recent movie per score (highest movie_id)
-        bonus_df = (
-            bonus_df.sort_values(by=["score", "movie_id"], ascending=[True, False])
+        # Get most recent per score
+    bonus_df = (
+        bonus_df.sort_values(by=["score", "movie_id"], ascending=[True, False])
                     .drop_duplicates(subset="score", keep="first")
                     .sort_values("score")
                     .reset_index(drop=True)
         )
 
-        last_yes_score = None
-        stop_score = None
+    last_yes_score = None
+    stop_score = None
 
-        for i, row in bonus_df.iterrows():
+    for i, row in bonus_df.iterrows():
+        key = f"bonus_{i}"
+
+        if i == 0 or st.session_state.get(f"bonus_{i-1}") == "Yes":
+            st.markdown(f"##### 🔍 Compare to: *{row['official_title']}* ({row['score']})")
+            st.image(row['poster_url'], width=150)
             response = st.radio(
-                f"🎯 Is this week's movie better than *{row['official_title']}* (score: {row['score']})?",
-                ["Yes", "No"], 
-                key=f"bonus_{i}"
-            )
+                f"Is this week's movie better than *{row['official_title']}*?",
+                options=["---", "Yes", "No"],
+                key=key,
+                index=0
+                )
 
             if response == "Yes":
                 last_yes_score = row["score"]
-            else:
+            elif response == "No":
                 stop_score = row["score"]
                 break
+        else:
+            break  # Stop showing more questions
 
-        if last_yes_score is not None and stop_score is not None:
-            refined_prediction = f"Between {last_yes_score:.1f} and {stop_score:.1f}"
-            prediction_placeholder.markdown(
-                f"### 🧠 Refined Predicted Score Range\nBased on your extended answers, the score is likely: **{refined_prediction}**"
+    if last_yes_score is not None and stop_score is not None:
+        refined_prediction = f"Between {last_yes_score:.1f} and {stop_score:.1f}"
+        prediction_placeholder.markdown(
+            f"### 🧠 Refined Predicted Score Range\nBased on your extended answers, the score is likely: **{refined_prediction}**"
             )
 
 with st.sidebar:
