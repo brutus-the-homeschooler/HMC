@@ -65,11 +65,11 @@ Brittany Brewer,19,The Ring,6,1
 Brittany Brewer,29,The Shining,5.9,1
 Brittany Brewer,66,The Sixth Sense,8.3,1
 Brittany Brewer,18,The Thing,8,1
-Brittany Brewer,31,The Visit,5.1,0
-Brittany Brewer,16,The VVitch,6.4,0
-Brittany Brewer,37,The Wailing,5.6,0
-Brittany Brewer,49,Train to Busan,9,0
-Brittany Brewer,30,You Should Have Left,6.8,0
+Brittany Brewer,31,The Visit,5.1,1
+Brittany Brewer,16,The VVitch,6.4,1
+Brittany Brewer,37,The Wailing,5.6,1
+Brittany Brewer,49,Train to Busan,9,1
+Brittany Brewer,30,You Should Have Left,6.8,1
 Jesus Gomez,22,10 Cloverfield Lane,5.5,1
 Jesus Gomez,12,28 Days Later,5.5,1
 Jesus Gomez,64,Abigail,5.5,1
@@ -147,92 +147,92 @@ Jesus Gomez,29,The Shining,9,1
 Jesus Gomez,66,The Sixth Sense,8.5,1
 Jesus Gomez,8,The Strangers,4,1
 Jesus Gomez,18,The Thing,6.5,1
-Jesus Gomez,31,The Visit,6,0
-Jesus Gomez,16,The VVitch,7,0
-Jesus Gomez,37,The Wailing,7,0
-Jesus Gomez,49,Train to Busan,8.5,0
-Jesus Gomez,30,You Should Have Left,2.5,0
-Anthony Gross,22,10 Cloverfield Lane,7.2,0
-Anthony Gross,12,28 Days Later,7.8,0
-Anthony Gross,64,Abigail,5.8,0
-Anthony Gross,23,Alien,7.3,0
-Anthony Gross,52,Amityville Horror,5.7,0
-Anthony Gross,3,Babadook,6.7,0
-Anthony Gross,13,Babysitter Killer Queen,4.8,0
-Anthony Gross,11,Banshee Chapter,5.6,0
-Anthony Gross,1,Belko Experiment,5,0
-Anthony Gross,26,Black Christmas,4.8,0
-Anthony Gross,71,Black Christmas (2019),5.5,0
-Anthony Gross,53,Blair Witch Project,6.6,0
-Anthony Gross,4,Blood Red Sky,5.7,0
-Anthony Gross,79,Bodies,6.4,0
-Anthony Gross,63,Body Snatchers,3.8,0
-Anthony Gross,27,Child's Play,4,0
-Anthony Gross,20,Creep,1.5,0
-Anthony Gross,69,Cube 2,3,0
-Anthony Gross,42,Dead Silence,4.8,0
-Anthony Gross,38,Deborah Logan,5.8,0
-Anthony Gross,9,Dragonfly,2,0
-Anthony Gross,58,Escape Room,5,0
-Anthony Gross,45,Evil Dead Rise,6,0
-Anthony Gross,76,Fear Street 1,7,0
-Anthony Gross,77,Fear Street 2,7,0
-Anthony Gross,78,Fear Street 3,6.7,0
-Anthony Gross,46,Friday The 13th,5.5,0
-Anthony Gross,60,Get Out,8.1,0
-Anthony Gross,7,Ginger Snaps,4.5,0
-Anthony Gross,67,Grave Encounters,5.5,0
-Anthony Gross,48,Halloween,8.1,0
-Anthony Gross,14,Hereditary,9,0
-Anthony Gross,17,Hills Have Eyes,7.6,0
-Anthony Gross,33,His House,5.7,0
-Anthony Gross,72,House of 1000 Corpses,4.5,0
-Anthony Gross,74,I Still Know,5,0
-Anthony Gross,55,It,6.8,0
-Anthony Gross,43,Jeepers Creepers,8.5,0
-Anthony Gross,57,Jennifer's Body,6.5,0
-Anthony Gross,25,Krampus,7.8,0
-Anthony Gross,73,Last Summer,5.7,0
-Anthony Gross,15,Maximum Overdrive,3,0
-Anthony Gross,80,Midsommar,7.9,0
-Anthony Gross,54,My Bloody Valentine,5,0
-Anthony Gross,61,Night Swim,4.5,0
-Anthony Gross,41,Paranormal Activity,6.9,0
-Anthony Gross,40,Parasite,3,0
-Anthony Gross,75,Poltergeist,5.8,0
-Anthony Gross,65,Ready or Not,6.6,0
-Anthony Gross,51,Rec,6.2,0
-Anthony Gross,62,Rosemary's Baby,6,0
-Anthony Gross,34,Scream,8,0
-Anthony Gross,35,Scream 2,7.4,0
-Anthony Gross,59,See No Evil,4.8,0
-Anthony Gross,44,Sinister,6.1,0
-Anthony Gross,2,Stir of Echoes,5.5,0
-Anthony Gross,32,Suspiria,4.7,0
-Anthony Gross,82,Texas Chainsaw,4.5,0
-Anthony Gross,56,Thanksgiving,6.1,0
-Anthony Gross,21,The Black Phone,5.9,0
-Anthony Gross,5,The Conjuring,8.7,0
-Anthony Gross,39,The Conjuring 2,7.3,0
-Anthony Gross,68,The Cube,6,0
-Anthony Gross,28,The Descent,7,0
-Anthony Gross,47,The Exorcist,6.2,0
-Anthony Gross,70,The Haunting,4,0
-Anthony Gross,50,The Lodge,5.7,0
-Anthony Gross,36,The Menu,6.5,0
-Anthony Gross,10,The Others,7.5,0
-Anthony Gross,24,The Purge,6.5,0
-Anthony Gross,19,The Ring,7,0
-Anthony Gross,6,The Ritual,8,0
-Anthony Gross,29,The Shining,7.7,0
-Anthony Gross,66,The Sixth Sense,6.7,0
-Anthony Gross,8,The Strangers,7.9,0
-Anthony Gross,18,The Thing,5,0
-Anthony Gross,31,The Visit,5.8,0
-Anthony Gross,16,The VVitch,8.8,0
-Anthony Gross,37,The Wailing,6.7,0
-Anthony Gross,49,Train to Busan,7.2,0
-Anthony Gross,30,You Should Have Left,3.7,0
+Jesus Gomez,31,The Visit,6,1
+Jesus Gomez,16,The VVitch,7,1
+Jesus Gomez,37,The Wailing,7,1
+Jesus Gomez,49,Train to Busan,8.5,1
+Jesus Gomez,30,You Should Have Left,2.5,1
+Anthony Gross,22,10 Cloverfield Lane,7.2,1
+Anthony Gross,12,28 Days Later,7.8,1
+Anthony Gross,64,Abigail,5.8,1
+Anthony Gross,23,Alien,7.3,1
+Anthony Gross,52,Amityville Horror,5.7,1
+Anthony Gross,3,Babadook,6.7,1
+Anthony Gross,13,Babysitter Killer Queen,4.8,1
+Anthony Gross,11,Banshee Chapter,5.6,1
+Anthony Gross,1,Belko Experiment,5,1
+Anthony Gross,26,Black Christmas,4.8,1
+Anthony Gross,71,Black Christmas (2019),5.5,1
+Anthony Gross,53,Blair Witch Project,6.6,1
+Anthony Gross,4,Blood Red Sky,5.7,1
+Anthony Gross,79,Bodies,6.4,1
+Anthony Gross,63,Body Snatchers,3.8,1
+Anthony Gross,27,Child's Play,4,1
+Anthony Gross,20,Creep,1.5,1
+Anthony Gross,69,Cube 2,3,1
+Anthony Gross,42,Dead Silence,4.8,1
+Anthony Gross,38,Deborah Logan,5.8,1
+Anthony Gross,9,Dragonfly,2,1
+Anthony Gross,58,Escape Room,5,1
+Anthony Gross,45,Evil Dead Rise,6,1
+Anthony Gross,76,Fear Street 1,7,1
+Anthony Gross,77,Fear Street 2,7,1
+Anthony Gross,78,Fear Street 3,6.7,1
+Anthony Gross,46,Friday The 13th,5.5,1
+Anthony Gross,60,Get Out,8.1,1
+Anthony Gross,7,Ginger Snaps,4.5,1
+Anthony Gross,67,Grave Encounters,5.5,1
+Anthony Gross,48,Halloween,8.1,1
+Anthony Gross,14,Hereditary,9,1
+Anthony Gross,17,Hills Have Eyes,7.6,1
+Anthony Gross,33,His House,5.7,1
+Anthony Gross,72,House of 1000 Corpses,4.5,1
+Anthony Gross,74,I Still Know,5,1
+Anthony Gross,55,It,6.8,1
+Anthony Gross,43,Jeepers Creepers,8.5,1
+Anthony Gross,57,Jennifer's Body,6.5,1
+Anthony Gross,25,Krampus,7.8,1
+Anthony Gross,73,Last Summer,5.7,1
+Anthony Gross,15,Maximum Overdrive,3,1
+Anthony Gross,80,Midsommar,7.9,1
+Anthony Gross,54,My Bloody Valentine,5,1
+Anthony Gross,61,Night Swim,4.5,1
+Anthony Gross,41,Paranormal Activity,6.9,1
+Anthony Gross,40,Parasite,3,1
+Anthony Gross,75,Poltergeist,5.8,1
+Anthony Gross,65,Ready or Not,6.6,1
+Anthony Gross,51,Rec,6.2,1
+Anthony Gross,62,Rosemary's Baby,6,1
+Anthony Gross,34,Scream,8,1
+Anthony Gross,35,Scream 2,7.4,1
+Anthony Gross,59,See No Evil,4.8,1
+Anthony Gross,44,Sinister,6.1,1
+Anthony Gross,2,Stir of Echoes,5.5,1
+Anthony Gross,32,Suspiria,4.7,1
+Anthony Gross,82,Texas Chainsaw,4.5,1
+Anthony Gross,56,Thanksgiving,6.1,1
+Anthony Gross,21,The Black Phone,5.9,1
+Anthony Gross,5,The Conjuring,8.7,1
+Anthony Gross,39,The Conjuring 2,7.3,1
+Anthony Gross,68,The Cube,6,1
+Anthony Gross,28,The Descent,7,1
+Anthony Gross,47,The Exorcist,6.2,1
+Anthony Gross,70,The Haunting,4,1
+Anthony Gross,50,The Lodge,5.7,1
+Anthony Gross,36,The Menu,6.5,1
+Anthony Gross,10,The Others,7.5,1
+Anthony Gross,24,The Purge,6.5,1
+Anthony Gross,19,The Ring,7,1
+Anthony Gross,6,The Ritual,8,1
+Anthony Gross,29,The Shining,7.7,1
+Anthony Gross,66,The Sixth Sense,6.7,1
+Anthony Gross,8,The Strangers,7.9,1
+Anthony Gross,18,The Thing,5,1
+Anthony Gross,31,The Visit,5.8,1
+Anthony Gross,16,The VVitch,8.8,1
+Anthony Gross,37,The Wailing,6.7,1
+Anthony Gross,49,Train to Busan,7.2,1
+Anthony Gross,30,You Should Have Left,3.7,1
 Molly Kollmann,22,10 Cloverfield Lane,6.3,1
 Molly Kollmann,12,28 Days Later,7,1
 Molly Kollmann,64,Abigail,4.7,1
