@@ -176,11 +176,11 @@ with st.sidebar:
     ul.rating-list li {
         margin-bottom: 8px;
         list-style-type: "🎬 ";
-        font-size: 16px;
+        font-size: 26px;
         line-height: 1.4;
     }
     ul.rating-list li strong {
-        font-size: 36px;
+        font-size: 18px;
         color: #FF4444;
     }
     </style>
