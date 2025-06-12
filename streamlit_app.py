@@ -1,26 +1,38 @@
-
 import streamlit as st
 import pandas as pd
-st.markdown("""
-    <style>
-    body {
-        background-image: url("https://i.imgur.com/I2OijBf.png");
-        background-size: cover;
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-    </style>
-""", unsafe_allow_html=True)
+from streamlit_js_eval import streamlit_js_eval
 
 # Load data
 ratings = pd.read_csv("ratings.csv")
 metadata = pd.read_csv("metadata.csv", encoding="ISO-8859-1")
 df = ratings.merge(metadata, on="movie_id")
 
-# Custom spooky CSS
+# Get unlocked users
+unlocked_users = ratings[ratings['unlock'] == 1]['username'].unique()
+
+# Retrieve from localStorage (only runs once when the app loads)
+user_from_local = streamlit_js_eval(js_expressions="localStorage.getItem('selected_user')", key="load_user")
+
+# Set default in session_state
+if "selected_user" not in st.session_state:
+    st.session_state.selected_user = user_from_local if user_from_local in unlocked_users else unlocked_users[0]
+
+# Dropdown selector
+selected_user = st.selectbox("Select a user", unlocked_users,
+                             index=list(unlocked_users).index(st.session_state.selected_user),
+                             key="selected_user")
+
+# Save selection back to localStorage
+streamlit_js_eval(js_expressions=f"localStorage.setItem('selected_user', '{selected_user}')", key="save_user")
+
+# Filter merged data for selected user
+user_df = df[df['username'] == selected_user]
+current_movie = metadata.loc[metadata['movie_id'].idxmax()]
+
+# 🎃 Background styling
 st.markdown("""
     <style>
+    @import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
     body {
         background-image: url('https://www.transparenttextures.com/patterns/dark-mosaic.png');
         background-size: cover;
@@ -31,43 +43,25 @@ st.markdown("""
         font-size: 4em;
         text-shadow: 2px 2px 4px #000000;
     }
-    @import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
     </style>
 """, unsafe_allow_html=True)
 
-# App title
+# Title
 st.markdown("<h1>🩸 Horror Movie Club 🧟</h1>", unsafe_allow_html=True)
 
-# User selector
-unlocked_users = ratings[ratings['unlock'] == 1]['username'].unique()
-
-selected_user = st.selectbox("Select a user", unlocked_users)
-
-# Join and filter merged dataframe for selected user
-user_df = df[df['username'] == selected_user]
-# Get the current (latest) movie from metadata
-current_movie = metadata.loc[metadata['movie_id'].idxmax()]
-
-# Display "Our Next Movie" section
+# Next movie
 st.markdown("## 🍿 Our Next Movie Is...")
 st.image(current_movie['poster_url'], width=300)
 st.markdown(f"### **{current_movie['official_title']}**")
 st.markdown(f"**Synopsis:** _{current_movie['synopsis']}_")
-
-# Links
-# Links as Markdown
 st.markdown(
     f"[🎬 IMDb]({current_movie['imdb_url']}) &nbsp;&nbsp;|&nbsp;&nbsp; [📚 Wikipedia]({current_movie['wiki_url']})",
     unsafe_allow_html=True
 )
-
-# Embed YouTube trailer
 st.video(current_movie["trailer_url"])
 
-
-prediction_placeholder = st.empty()  # Reserve a space for prediction text
-
-# Score calculations
+# Prediction logic
+prediction_placeholder = st.empty()
 q1 = user_df['score'].quantile(0.25)
 q2 = user_df['score'].mean()
 q3 = user_df['score'].quantile(0.75)
@@ -75,34 +69,29 @@ q3 = user_df['score'].quantile(0.75)
 def closest_movie_to(value):
     return user_df.iloc[(user_df['score'] - value).abs().argsort()[:1]]
 
-for label, quantile in [("Q1", q1), ("Q2", q2), ("Q3", q3)]:
-    movie = closest_movie_to(quantile).iloc[0]
-    friendly_labels = {
+friendly_labels = {
     "Q1": "👎 Lower-Rated Benchmark",
     "Q2": "🤷 Middle-Rated Benchmark",
     "Q3": "👍 Higher-Rated Benchmark"
 }
 
+for label, quantile in [("Q1", q1), ("Q2", q2), ("Q3", q3)]:
+    movie = closest_movie_to(quantile).iloc[0]
     st.subheader(f"{friendly_labels[label]}: {movie['official_title']} ({movie['year']})")
-
     st.image(movie['poster_url'], width=200)
     st.markdown(f"**Director:** {movie['director']}")
     st.markdown(f"**RT Score:** {movie['rt_score']}%")
     st.markdown(f"**Synopsis:** _{movie['synopsis']}_")
     st.markdown(f"[IMDb]({movie['imdb_url']}) | [Wikipedia]({movie['wiki_url']})")
-    st.radio(f"Do you think this week's movie is better than *{movie['official_title']}*?", options=["---", "Yes", "No"],
-                key=label,
-                index=0
-                )
-# Capture user answers from radios
-q1_answer = st.session_state["Q1"]
-q2_answer = st.session_state["Q2"]
-q3_answer = st.session_state["Q3"]
+    st.radio(
+        f"Do you think this week's movie is better than *{movie['official_title']}*?",
+        options=["---", "Yes", "No"],
+        key=label,
+        index=0
+    )
 
-# Use the reserved placeholder to display at the top
-prediction_placeholder.markdown("### 🧠 Predicted Score Range")
-
-if "Q1" in st.session_state and "Q2" in st.session_state and "Q3" in st.session_state:
+# Display score range prediction
+if all(k in st.session_state for k in ["Q1", "Q2", "Q3"]):
     q1_answer = st.session_state["Q1"]
     q2_answer = st.session_state["Q2"]
     q3_answer = st.session_state["Q3"]
@@ -119,20 +108,20 @@ if "Q1" in st.session_state and "Q2" in st.session_state and "Q3" in st.session_
         prediction = "Unable to predict based on your answers."
 
     prediction_placeholder.markdown(
-        f"Based on your answers, we think this week's movie score will be: **{prediction}**"
+        f"### 🧠 Predicted Score Range\nBased on your answers, we think this week's movie score will be: **{prediction}**"
     )
-if all(ans == "Yes" for ans in [q1_answer, q2_answer, q3_answer]):
+
+# Bonus refinement
+if all(st.session_state.get(k) == "Yes" for k in ["Q1", "Q2", "Q3"]):
     st.markdown("#### 🔁 Let's Refine Your Score Prediction Even More...")
 
     bonus_df = user_df[user_df['score'] > q3].copy()
-
-        # Get most recent per score
     bonus_df = (
         bonus_df.sort_values(by=["score", "movie_id"], ascending=[True, False])
-                    .drop_duplicates(subset="score", keep="first")
-                    .sort_values("score")
-                    .reset_index(drop=True)
-        )
+        .drop_duplicates(subset="score", keep="first")
+        .sort_values("score")
+        .reset_index(drop=True)
+    )
 
     last_yes_score = None
     stop_score = None
@@ -148,7 +137,7 @@ if all(ans == "Yes" for ans in [q1_answer, q2_answer, q3_answer]):
                 options=["---", "Yes", "No"],
                 key=key,
                 index=0
-                )
+            )
 
             if response == "Yes":
                 last_yes_score = row["score"]
@@ -156,18 +145,17 @@ if all(ans == "Yes" for ans in [q1_answer, q2_answer, q3_answer]):
                 stop_score = row["score"]
                 break
         else:
-            break  # Stop showing more questions
+            break
 
     if last_yes_score is not None and stop_score is not None:
         refined_prediction = f"Between {last_yes_score:.1f} and {stop_score:.1f}"
         prediction_placeholder.markdown(
             f"### 🧠 Refined Predicted Score Range\nBased on your extended answers, the score is likely: **{refined_prediction}**"
-            )
+        )
 
+# Sidebar ratings
 with st.sidebar:
     st.markdown("## 🎬 Your Ratings")
-
-    # Add CSS styling
     st.markdown("""
     <style>
     ul.rating-list {
@@ -188,34 +176,27 @@ with st.sidebar:
 
     if not user_df.empty:
         st.markdown('<ul class="rating-list">', unsafe_allow_html=True)
-
         for _, row in user_df.sort_values(by="score", ascending=False).iterrows():
             st.markdown(
                 f'<li title="Director: {row["director"]} | RT: {row["rt_score"]}%">'
                 f'<strong>{row["official_title"]}</strong> {row["score"]}</li>',
                 unsafe_allow_html=True
             )
-
         st.markdown('</ul>', unsafe_allow_html=True)
     else:
         st.markdown("No ratings found.")
 
-
-    # Divider
     st.markdown("---")
 
-    # Collapsible section for all movies
+    # Show all movies
     with st.expander("📚 Show All Movies", expanded=False):
         for _, row in metadata.sort_values("movie_id").iterrows():
             st.image(row["poster_url"], width=150)
             st.markdown(f"**{row['official_title']}**")
-        
-        # Conditional link builder
+
             links = f"[IMDb]({row['imdb_url']}) | [Wikipedia]({row['wiki_url']})"
             if pd.notna(row.get("osu_library_link")) and row["osu_library_link"].strip() != "":
                 links += f" | [📚 OSU Library]({row['osu_library_link']})"
 
             st.markdown(links)
             st.markdown("---")
-
-
