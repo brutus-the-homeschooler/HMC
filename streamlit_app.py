@@ -55,7 +55,7 @@ st.image(current_movie['poster_url'], width=300)
 st.markdown(f"### **{current_movie['official_title']}**")
 st.markdown(f"**Synopsis:** _{current_movie['synopsis']}_")
 st.markdown(
-    f"[🎬 IMDb]({current_movie['imdb_url']}) &nbsp;&nbsp;|&nbsp;&nbsp; [📚 Wikipedia]({current_movie['wiki_url']})",
+   f"[🎬 IMDb]({current_movie['imdb_url']}) &nbsp;&nbsp;|&nbsp;&nbsp; [📚 Wikipedia]({current_movie['wiki_url']}) &nbsp;&nbsp;|&nbsp;&nbsp; [👀 Watch]({current_movie['osu_library_link']})"
     unsafe_allow_html=True
 )
 st.video(current_movie["trailer_url"])
