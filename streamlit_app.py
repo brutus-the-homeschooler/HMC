@@ -60,6 +60,11 @@ st.markdown(
 )
 st.video(current_movie["trailer_url"])
 
+st.markdown("""
+<iframe src="https://drive.google.com/file/d/1eQJRDj4hD1lgXEhupehL1Rp-f8Oz15xG/view?usp=drive_link" 
+width="700" height="400" allow="autoplay"></iframe>
+""", unsafe_allow_html=True)
+
 # Prediction logic
 prediction_placeholder = st.empty()
 q1 = user_df['score'].quantile(0.25)
