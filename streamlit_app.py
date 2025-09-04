@@ -186,11 +186,7 @@ with tab3:
             st.markdown("### ⏳ Ratings Over Time")
             st.line_chart(timeline_df.set_index("date_watched")["score"])
 
-            st.markdown("### 📅 Movies Watched Per Month")
-            monthly_counts = (
-                timeline_df.groupby(timeline_df['date_watched'].dt.to_period("M")).size()
-            )
-            st.bar_chart(monthly_counts)
+     
 
     # Similarity to Other Users
     similarities = {}
