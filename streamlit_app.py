@@ -1,7 +1,6 @@
 import streamlit as st
 import pandas as pd
 from streamlit_js_eval import streamlit_js_eval
-#import matplotlib.pyplot as plt
 
 # ============================
 # Load Data
@@ -41,7 +40,7 @@ streamlit_js_eval(
 )
 
 # Filter data for this user
-user_df = df[df['username'] == selected_user]
+user_df = df[df['username'] == selected_user].copy()
 current_movie = metadata.loc[metadata['movie_id'].idxmax()]
 
 # ============================
@@ -69,7 +68,7 @@ st.markdown("<h1>🩸 Horror Movie Club 🧟</h1>", unsafe_allow_html=True)
 # ============================
 # Tabs
 # ============================
-tab1, tab2, tab3 = st.tabs(["🍿 Next Movie", "🧠 Prediction", "📈 Trends"])
+tab1, tab2, tab3, tab4 = st.tabs(["🍿 Next Movie", "🧠 Prediction", "📈 Trends", "📜 Historical"])
 
 # ----------------------------
 # TAB 1: Next Movie
@@ -178,7 +177,9 @@ with tab3:
 
     # Timeline
     if "date_watched" in user_df.columns:
-        user_df["date_watched"] = pd.to_datetime(user_df["date_watched"], errors="coerce")
+        user_df["date_watched"] = pd.to_datetime(
+            user_df["date_watched"], format="%m/%d/%Y", errors="coerce"
+        )
         timeline_df = user_df.dropna(subset=["date_watched"]).sort_values("date_watched")
 
         if not timeline_df.empty:
@@ -213,3 +214,23 @@ with tab3:
         st.markdown(", ".join([name for name, _ in top_matches]))
     else:
         st.markdown("### 🧑‍🤝‍🧑 No strong similarities found yet.")
+
+# ----------------------------
+# TAB 4: Historical Ratings
+# ----------------------------
+with tab4:
+    st.markdown(f"## 📜 {selected_user}'s Historical Ratings (High → Low)")
+    if not user_df.empty:
+        for _, row in user_df.sort_values("score", ascending=False).iterrows():
+            st.image(row["poster_url"], width=150)
+            st.markdown(f"### **{row['official_title']}** ({row['year']}) — {row['score']}")
+            st.markdown(f"**Director:** {row['director']}")
+            st.markdown(f"**RT Score:** {row['rt_score']}%")
+            st.markdown(f"**Synopsis:** _{row['synopsis']}_")
+            links = f"[IMDb]({row['imdb_url']}) | [Wikipedia]({row['wiki_url']})"
+            if pd.notna(row.get("osu_library_link")) and row["osu_library_link"].strip() != "":
+                links += f" | [📚 OSU Library]({row['osu_library_link']})"
+            st.markdown(links)
+            st.markdown("---")
+    else:
+        st.markdown("No ratings found.")
