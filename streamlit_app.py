@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 from streamlit_js_eval import streamlit_js_eval
-
+import plotly.express as px
 # ============================
 # Load Data
 # ============================
@@ -176,6 +176,8 @@ with tab3:
             st.markdown(f"**{row['official_title']}** ({row['score']})")
 
     # Timeline
+
+
     if "date_watched" in user_df.columns:
         user_df["date_watched"] = pd.to_datetime(
             user_df["date_watched"], format="%m/%d/%Y", errors="coerce"
@@ -184,7 +186,31 @@ with tab3:
 
         if not timeline_df.empty:
             st.markdown("### ⏳ Ratings Over Time")
-            st.line_chart(timeline_df.set_index("date_watched")["score"])
+
+            # Create a custom hover column with HTML <img>
+            timeline_df["hover_info"] = (
+                "<b>" + timeline_df["official_title"] + "</b><br>" +
+                "Score: " + timeline_df["score"].astype(str) + "<br>" +
+                "Date: " + timeline_df["date_watched"].dt.strftime("%b %d, %Y") + "<br>" +
+                "<img src='" + timeline_df["poster_url"] + "' width='100'>"
+            )
+
+            fig = px.line(
+                timeline_df,
+                x="date_watched",
+                y="score",
+                markers=True,
+                hover_name="official_title",  # fallback label
+                hover_data={"hover_info": True, "score": False, "date_watched": False}
+            )
+
+            # Replace the default hover with our HTML
+            fig.update_traces(
+                hovertemplate="%{customdata[0]}<extra></extra>",
+                customdata=timeline_df[["hover_info"]].values
+            )
+
+            st.plotly_chart(fig, use_container_width=True)
 
      
 
