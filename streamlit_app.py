@@ -191,8 +191,8 @@ with tab3:
             timeline_df["hover_info"] = (
                 "<b>" + timeline_df["official_title"] + "</b><br>" +
                 "Score: " + timeline_df["score"].astype(str) + "<br>" +
-                "Date: " + timeline_df["date_watched"].dt.strftime("%b %d, %Y") + "<br>" +
-                "<img src='" + timeline_df["poster_url"] + "' width='100'>"
+                "Date: " + timeline_df["date_watched"].dt.strftime("%b %d, %Y") + "<br>" 
+               
             )
 
             fig = px.line(
