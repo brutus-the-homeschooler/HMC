@@ -12,7 +12,7 @@ Anthony Gross,58,Escape Room,5,1,7/25/2024
 Molly Kollmann,58,Escape Room,4.2,1,7/25/2024
 Brittany Brewer,27,Child's Play,6.2,1,
 Brittany Brewer,20,Creep,7.5,1,
-Chris McCann,58,Escape Room,5.6,1,7/25/2024
+Chris McCann,58,Escape Room,5.6,0,7/25/2024
 Brittany Brewer,42,Dead Silence,6,1,
 Brittany Brewer,38,Deborah Logan,6,1,
 Cheryl Brilmyer,58,Escape Room,5,1,7/25/2024
@@ -35,7 +35,7 @@ Brittany Brewer,57,Jennifer's Body,9.1,1,
 Brittany Brewer,25,Krampus,2,1,
 Molly Kollmann,59,See No Evil,3,1,8/8/2024
 Brittany Brewer,15,Maximum Overdrive,3.2,1,
-Chris McCann,59,See No Evil,4,1,8/8/2024
+Chris McCann,59,See No Evil,4,0,8/8/2024
 Brittany Brewer,54,My Bloody Valentine,2.8,1,
 Cheryl Brilmyer,59,See No Evil,3,1,8/8/2024
 Jimmy Dwyer,59,See No Evil,1.2,1,8/8/2024
@@ -83,7 +83,7 @@ Jesus Gomez,26,Black Christmas,7.5,1,
 Molly Kollmann,63,Body Snatchers,6.9,1,10/3/2024
 Jesus Gomez,53,Blair Witch Project,7,1,
 Jesus Gomez,4,Blood Red Sky,5,1,
-Chris McCann,63,Body Snatchers,6,1,10/3/2024
+Chris McCann,63,Body Snatchers,6,0,10/3/2024
 Cheryl Brilmyer,63,Body Snatchers,6.2,1,10/3/2024
 Jesus Gomez,27,Child's Play,7,1,
 Jesus Gomez,20,Creep,7,1,
@@ -97,7 +97,7 @@ Drew Stevens,63,Body Snatchers,7.1,1,10/3/2024
 Michael Vaughn,63,Body Snatchers,7.7,1,10/3/2024
 Victoria Zubovich,63,Body Snatchers,2,1,10/3/2024
 Jesus Gomez,46,Friday The 13th,7,1,
-Chris McCann,60,Get Out,7.7,1,8/22/2024
+Chris McCann,60,Get Out,7.7,0,8/22/2024
 Jesus Gomez,7,Ginger Snaps,5,1,
 Brittany Brewer,64,Abigail,6,1,10/10/2024
 Jesus Gomez,48,Halloween,8.5,1,
@@ -112,7 +112,7 @@ Jesus Gomez,57,Jennifer's Body,6,1,
 Jesus Gomez,25,Krampus,6.5,1,
 Molly Kollmann,64,Abigail,4.7,1,10/10/2024
 Jesus Gomez,15,Maximum Overdrive,2,1,
-Chris McCann,64,Abigail,7.1,1,10/10/2024
+Chris McCann,64,Abigail,7.1,0,10/10/2024
 Jesus Gomez,54,My Bloody Valentine,2,1,
 Cheryl Brilmyer,64,Abigail,6.8,1,10/10/2024
 Jimmy Dwyer,64,Abigail,6.5,1,10/10/2024
@@ -144,7 +144,7 @@ Jesus Gomez,24,The Purge,6,1,
 Jesus Gomez,19,The Ring,6,1,
 Jesus Gomez,6,The Ritual,5,1,
 Jesus Gomez,29,The Shining,9,1,
-Chris McCann,65,Ready or Not,7.2,1,10/17/2024
+Chris McCann,65,Ready or Not,7.2,0,10/17/2024
 Jesus Gomez,8,The Strangers,4,1,
 Jesus Gomez,18,The Thing,6.5,1,
 Jesus Gomez,31,The Visit,6,1,
@@ -186,7 +186,7 @@ Anthony Gross,48,Halloween,8.1,1,
 Anthony Gross,14,Hereditary,9,1,
 Anthony Gross,17,Hills Have Eyes,7.6,1,
 Anthony Gross,33,His House,5.7,1,
-Chris McCann,66,The Sixth Sense,7.3,1,10/24/2024
+Chris McCann,66,The Sixth Sense,7.3,0,10/24/2024
 Cheryl Brilmyer,66,The Sixth Sense,7,1,10/24/2024
 Anthony Gross,55,It,6.8,1,
 Anthony Gross,43,Jeepers Creepers,8.5,1,
@@ -214,7 +214,7 @@ Anthony Gross,56,Thanksgiving,6.1,1,
 Anthony Gross,21,The Black Phone,5.9,1,
 Anthony Gross,5,The Conjuring,8.7,1,
 Anthony Gross,39,The Conjuring 2,7.3,1,
-Chris McCann,67,Grave Encounters,5.7,1,10/31/2024
+Chris McCann,67,Grave Encounters,5.7,0,10/31/2024
 Anthony Gross,28,The Descent,7,1,
 Anthony Gross,47,The Exorcist,6.2,1,
 Cheryl Brilmyer,67,Grave Encounters,4.2,1,10/31/2024
@@ -264,7 +264,7 @@ Molly Kollmann,43,Jeepers Creepers,5.8,1,
 Molly Kollmann,57,Jennifer's Body,7.5,1,
 Molly Kollmann,25,Krampus,5,1,
 Molly Kollmann,68,The Cube,4.7,1,11/14/2024
-Chris McCann,68,The Cube,5.7,1,11/14/2024
+Chris McCann,68,The Cube,5.7,0,11/14/2024
 Molly Kollmann,54,My Bloody Valentine,3.5,1,
 Cheryl Brilmyer,68,The Cube,3.8,1,11/14/2024
 Jimmy Dwyer,68,The Cube,4.1,1,11/14/2024
@@ -298,92 +298,92 @@ Molly Kollmann,18,The Thing,7.5,1,
 Molly Kollmann,31,The Visit,6,1,
 Molly Kollmann,16,The VVitch,7,1,
 Molly Kollmann,30,You Should Have Left,3.3,1,
-Chris McCann,22,10 Cloverfield Lane,7.5,1,
-Chris McCann,12,28 Days Later,6.2,1,
+Chris McCann,22,10 Cloverfield Lane,7.5,0,
+Chris McCann,12,28 Days Later,6.2,0,
 Anthony Gross,69,Cube 2,3,1,11/25/2024
-Chris McCann,23,Alien,6.2,1,
-Chris McCann,52,Amityville Horror,4.6,1,
-Chris McCann,3,Babadook,1.5,1,
-Chris McCann,13,Babysitter Killer Queen,5.5,1,
-Chris McCann,11,Banshee Chapter,5,1,
-Chris McCann,1,Belko Experiment,5.5,1,
-Chris McCann,26,Black Christmas,3.5,1,
-Chris McCann,69,Cube 2,3.6,1,11/25/2024
-Chris McCann,53,Blair Witch Project,5.7,1,
-Chris McCann,4,Blood Red Sky,6.3,1,
+Chris McCann,23,Alien,6.2,0,
+Chris McCann,52,Amityville Horror,4.6,0,
+Chris McCann,3,Babadook,1.5,0,
+Chris McCann,13,Babysitter Killer Queen,5.5,0,
+Chris McCann,11,Banshee Chapter,5,0,
+Chris McCann,1,Belko Experiment,5.5,0,
+Chris McCann,26,Black Christmas,3.5,0,
+Chris McCann,69,Cube 2,3.6,0,11/25/2024
+Chris McCann,53,Blair Witch Project,5.7,0,
+Chris McCann,4,Blood Red Sky,6.3,0,
 Cheryl Brilmyer,69,Cube 2,3.9,1,11/25/2024
 Jimmy Dwyer,69,Cube 2,3.9,1,11/25/2024
-Chris McCann,27,Child's Play,5.6,1,
-Chris McCann,20,Creep,0.9,1,
+Chris McCann,27,Child's Play,5.6,0,
+Chris McCann,20,Creep,0.9,0,
 Drew Stevens,69,Cube 2,4.5,1,11/25/2024
-Chris McCann,42,Dead Silence,6,1,
-Chris McCann,38,Deborah Logan,5.9,1,
-Chris McCann,9,Dragonfly,3.5,1,
+Chris McCann,42,Dead Silence,6,0,
+Chris McCann,38,Deborah Logan,5.9,0,
+Chris McCann,9,Dragonfly,3.5,0,
 Jesus Gomez,61,Night Swim,2.5,1,9/5/2024
-Chris McCann,45,Evil Dead Rise,4.9,1,
+Chris McCann,45,Evil Dead Rise,4.9,0,
 Michael Vaughn,69,Cube 2,4.1,1,11/25/2024
 Victoria Zubovich,69,Cube 2,2.4,1,11/25/2024
 Brittany Brewer,70,The Haunting,6.4,1,12/5/2024
-Chris McCann,46,Friday The 13th,5.5,1,
+Chris McCann,46,Friday The 13th,5.5,0,
 Anthony Gross,61,Night Swim,4.5,1,9/5/2024
-Chris McCann,7,Ginger Snaps,1,1,
+Chris McCann,7,Ginger Snaps,1,0,
 Jesus Gomez,70,The Haunting,6,1,12/5/2024
-Chris McCann,48,Halloween,7.3,1,
-Chris McCann,14,Hereditary,8.5,1,
-Chris McCann,17,Hills Have Eyes,7.3,1,
-Chris McCann,33,His House,5.5,1,
+Chris McCann,48,Halloween,7.3,0,
+Chris McCann,14,Hereditary,8.5,0,
+Chris McCann,17,Hills Have Eyes,7.3,0,
+Chris McCann,33,His House,5.5,0,
 Anthony Gross,70,The Haunting,4,1,12/5/2024
 Molly Kollmann,70,The Haunting,4,1,12/5/2024
-Chris McCann,55,It,7.3,1,
-Chris McCann,43,Jeepers Creepers,7.5,1,
-Chris McCann,57,Jennifer's Body,5.7,1,
-Chris McCann,25,Krampus,6.4,1,
+Chris McCann,55,It,7.3,0,
+Chris McCann,43,Jeepers Creepers,7.5,0,
+Chris McCann,57,Jennifer's Body,5.7,0,
+Chris McCann,25,Krampus,6.4,0,
 Cheryl Brilmyer,70,The Haunting,5.8,1,12/5/2024
-Chris McCann,15,Maximum Overdrive,4,1,
+Chris McCann,15,Maximum Overdrive,4,0,
 Jimmy Dwyer,70,The Haunting,7,1,12/5/2024
-Chris McCann,54,My Bloody Valentine,4.7,1,
+Chris McCann,54,My Bloody Valentine,4.7,0,
 Michael Vaughn,70,The Haunting,4.7,1,12/5/2024
 Brittany Brewer,71,Black Christmas (2019),1,1,12/12/2024
-Chris McCann,41,Paranormal Activity,6.3,1,
-Chris McCann,40,Parasite,3,1,
+Chris McCann,41,Paranormal Activity,6.3,0,
+Chris McCann,40,Parasite,3,0,
 Jesus Gomez,71,Black Christmas (2019),4.5,1,12/12/2024
 Anthony Gross,71,Black Christmas (2019),5.5,1,12/12/2024
-Chris McCann,51,Rec,8.4,1,
-Chris McCann,71,Black Christmas (2019),4.5,1,12/12/2024
-Chris McCann,34,Scream,10,1,
-Chris McCann,35,Scream 2,8.5,1,
+Chris McCann,51,Rec,8.4,0,
+Chris McCann,71,Black Christmas (2019),4.5,0,12/12/2024
+Chris McCann,34,Scream,10,0,
+Chris McCann,35,Scream 2,8.5,0,
 Molly Kollmann,61,Night Swim,3.8,1,9/5/2024
-Chris McCann,44,Sinister,8.9,1,
-Chris McCann,2,Stir of Echoes,6.2,1,
-Chris McCann,32,Suspiria,3.9,1,
+Chris McCann,44,Sinister,8.9,0,
+Chris McCann,2,Stir of Echoes,6.2,0,
+Chris McCann,32,Suspiria,3.9,0,
 Jimmy Dwyer,71,Black Christmas (2019),4.2,1,12/12/2024
-Chris McCann,56,Thanksgiving,6.2,1,
-Chris McCann,21,The Black Phone,6.9,1,
-Chris McCann,5,The Conjuring,8.5,1,
-Chris McCann,39,The Conjuring 2,8.6,1,
+Chris McCann,56,Thanksgiving,6.2,0,
+Chris McCann,21,The Black Phone,6.9,0,
+Chris McCann,5,The Conjuring,8.5,0,
+Chris McCann,39,The Conjuring 2,8.6,0,
 Drew Stevens,71,Black Christmas (2019),4,1,12/12/2024
-Chris McCann,28,The Descent,8.2,1,
-Chris McCann,47,The Exorcist,6.4,1,
-Chris McCann,50,The Lodge,4.4,1,
-Chris McCann,36,The Menu,5.5,1,
-Chris McCann,10,The Others,7.5,1,
-Chris McCann,24,The Purge,5,1,
-Chris McCann,19,The Ring,7.9,1,
-Chris McCann,6,The Ritual,7,1,
+Chris McCann,28,The Descent,8.2,0,
+Chris McCann,47,The Exorcist,6.4,0,
+Chris McCann,50,The Lodge,4.4,0,
+Chris McCann,36,The Menu,5.5,0,
+Chris McCann,10,The Others,7.5,0,
+Chris McCann,24,The Purge,5,0,
+Chris McCann,19,The Ring,7.9,0,
+Chris McCann,6,The Ritual,7,0,
 Michael Vaughn,71,Black Christmas (2019),4.2,1,12/12/2024
-Chris McCann,8,The Strangers,6.9,1,
-Chris McCann,18,The Thing,6.4,1,
-Chris McCann,31,The Visit,7.3,1,
-Chris McCann,16,The VVitch,5,1,
-Chris McCann,37,The Wailing,7.3,1,
-Chris McCann,49,Train to Busan,8.6,1,
-Chris McCann,30,You Should Have Left,3.7,1,
+Chris McCann,8,The Strangers,6.9,0,
+Chris McCann,18,The Thing,6.4,0,
+Chris McCann,31,The Visit,7.3,0,
+Chris McCann,16,The VVitch,5,0,
+Chris McCann,37,The Wailing,7.3,0,
+Chris McCann,49,Train to Busan,8.6,0,
+Chris McCann,30,You Should Have Left,3.7,0,
 Brittany Brewer,72,House of 1000 Corpses,4,1,1/9/2025
 Jesus Gomez,72,House of 1000 Corpses,4.5,1,1/9/2025
 Anthony Gross,72,House of 1000 Corpses,4.5,1,1/9/2025
 Molly Kollmann,72,House of 1000 Corpses,2.8,1,1/9/2025
-Chris McCann,61,Night Swim,3.5,1,9/5/2024
-Chris McCann,72,House of 1000 Corpses,4,1,1/9/2025
+Chris McCann,61,Night Swim,3.5,0,9/5/2024
+Chris McCann,72,House of 1000 Corpses,4,0,1/9/2025
 Cheryl Brilmyer,72,House of 1000 Corpses,2.8,1,1/9/2025
 Jimmy Dwyer,72,House of 1000 Corpses,4.8,1,1/9/2025
 Cheryl Brilmyer,61,Night Swim,2.6,1,9/5/2024
@@ -394,7 +394,7 @@ Brittany Brewer,73,Last Summer,6.2,1,1/23/2025
 Jesus Gomez,73,Last Summer,5.5,1,1/23/2025
 Anthony Gross,73,Last Summer,5.7,1,1/23/2025
 Molly Kollmann,73,Last Summer,5.3,1,1/23/2025
-Chris McCann,73,Last Summer,6,1,1/23/2025
+Chris McCann,73,Last Summer,6,0,1/23/2025
 Cheryl Brilmyer,73,Last Summer,6.5,1,1/23/2025
 Jimmy Dwyer,73,Last Summer,5.3,1,1/23/2025
 Jimmy Dwyer,61,Night Swim,5.3,1,9/5/2024
@@ -408,7 +408,7 @@ Jimmy Dwyer,23,Alien,7.2,1,
 Jimmy Dwyer,3,Babadook,5.6,1,
 Anthony Gross,74,I Still Know,5,1,2/6/2025
 Jimmy Dwyer,53,Blair Witch Project,7.6,1,
-Chris McCann,74,I Still Know,6.3,1,2/6/2025
+Chris McCann,74,I Still Know,6.3,0,2/6/2025
 Cheryl Brilmyer,74,I Still Know,4.9,1,2/6/2025
 Jimmy Dwyer,74,I Still Know,3.8,1,2/6/2025
 Drew Stevens,61,Night Swim,6.8,1,9/5/2024
@@ -422,7 +422,7 @@ Jesus Gomez,75,Poltergeist,7,1,2/20/2025
 Anthony Gross,75,Poltergeist,5.8,1,2/20/2025
 Jimmy Dwyer,55,It,7.2,1,
 Molly Kollmann,75,Poltergeist,7.4,1,2/20/2025
-Chris McCann,75,Poltergeist,5.7,1,2/20/2025
+Chris McCann,75,Poltergeist,5.7,0,2/20/2025
 Cheryl Brilmyer,75,Poltergeist,6.8,1,2/20/2025
 Jimmy Dwyer,75,Poltergeist,7.2,1,2/20/2025
 Jimmy Dwyer,41,Paranormal Activity,6.3,1,
@@ -444,7 +444,7 @@ Anthony Gross,76,Fear Street 1,7,1,3/6/2025
 Jimmy Dwyer,8,The Strangers,6.5,1,
 Jimmy Dwyer,49,Train to Busan,6,1,
 Molly Kollmann,76,Fear Street 1,4,1,3/6/2025
-Chris McCann,76,Fear Street 1,7.7,1,3/6/2025
+Chris McCann,76,Fear Street 1,7.7,0,3/6/2025
 Cheryl Brilmyer,76,Fear Street 1,4.5,1,3/6/2025
 Jimmy Dwyer,76,Fear Street 1,6.6,1,3/6/2025
 Drew Stevens,76,Fear Street 1,5.8,1,3/6/2025
@@ -457,7 +457,7 @@ Brittany Brewer,77,Fear Street 2,7.5,1,3/20/2025
 Jesus Gomez,77,Fear Street 2,6.5,1,3/20/2025
 Anthony Gross,77,Fear Street 2,7,1,3/20/2025
 Molly Kollmann,77,Fear Street 2,5.2,1,3/20/2025
-Chris McCann,77,Fear Street 2,8,1,3/20/2025
+Chris McCann,77,Fear Street 2,8,0,3/20/2025
 Cheryl Brilmyer,77,Fear Street 2,5.5,1,3/20/2025
 Jimmy Dwyer,77,Fear Street 2,6.8,1,3/20/2025
 Drew Stevens,77,Fear Street 2,6.8,1,3/20/2025
@@ -471,12 +471,12 @@ Michael Vaughn,23,Alien,7.5,1,
 Michael Vaughn,3,Babadook,7.2,1,
 Jesus Gomez,78,Fear Street 3,6,1,4/3/2025
 Anthony Gross,78,Fear Street 3,6.7,1,4/3/2025
-Chris McCann,78,Fear Street 3,8.1,1,4/3/2025
+Chris McCann,78,Fear Street 3,8.1,0,4/3/2025
 Molly Kollmann,62,Rosemary's Baby,6.8,1,9/19/2024
 Cheryl Brilmyer,78,Fear Street 3,5.7,1,4/3/2025
 Jimmy Dwyer,78,Fear Street 3,6.9,1,4/3/2025
 Drew Stevens,78,Fear Street 3,6.3,1,4/3/2025
-Chris McCann,62,Rosemary's Baby,5.1,1,9/19/2024
+Chris McCann,62,Rosemary's Baby,5.1,0,9/19/2024
 Michael Vaughn,78,Fear Street 3,5.7,1,4/3/2025
 Victoria Zubovich,78,Fear Street 3,7.7,1,4/3/2025
 Emma Rader,78,Fear Street 3,7.3,1,4/3/2025
@@ -484,7 +484,7 @@ Brittany Brewer,79,Bodies,7.1,1,4/17/2025
 Jesus Gomez,79,Bodies,6.5,1,4/17/2025
 Anthony Gross,79,Bodies,6.4,1,4/17/2025
 Molly Kollmann,79,Bodies,5.6,1,4/17/2025
-Chris McCann,79,Bodies,6.1,1,4/17/2025
+Chris McCann,79,Bodies,6.1,0,4/17/2025
 Cheryl Brilmyer,79,Bodies,4.5,1,4/17/2025
 Jimmy Dwyer,79,Bodies,6.2,1,4/17/2025
 Cheryl Brilmyer,62,Rosemary's Baby,6.1,1,9/19/2024
@@ -498,7 +498,7 @@ Brittany Brewer,80,Midsommar,8.9,1,5/1/2025
 Jesus Gomez,80,Midsommar,7.5,1,5/1/2025
 Anthony Gross,80,Midsommar,7.9,1,5/1/2025
 Molly Kollmann,80,Midsommar,7.3,1,5/1/2025
-Chris McCann,80,Midsommar,3.5,1,5/1/2025
+Chris McCann,80,Midsommar,3.5,0,5/1/2025
 Jimmy Dwyer,62,Rosemary's Baby,6.8,1,9/19/2024
 Cheryl Brilmyer,80,Midsommar,6.2,1,5/1/2025
 Jimmy Dwyer,80,Midsommar,7,1,5/1/2025
@@ -510,7 +510,7 @@ Emma Rader,80,Midsommar,9.5,1,5/1/2025
 Brittany Brewer,81,Nightmare on Elm Street,6.9,1,5/15/2025
 Jesus Gomez,81,Nightmare on Elm Street,8.5,1,5/15/2025
 Molly Kollmann,81,Nightmare on Elm Street,6.8,1,5/15/2025
-Chris McCann,81,Nightmare on Elm Street,6,1,5/15/2025
+Chris McCann,81,Nightmare on Elm Street,6,0,5/15/2025
 Cheryl Brilmyer,81,Nightmare on Elm Street,6.4,1,5/15/2025
 Jimmy Dwyer,81,Nightmare on Elm Street,8.2,1,5/15/2025
 Drew Stevens,81,Nightmare on Elm Street,4.5,1,5/15/2025
@@ -522,7 +522,7 @@ Emma Rader,3,Babadook,5,1,
 Emma Rader,53,Blair Witch Project,8,1,
 Jesus Gomez,82,Texas Chainsaw,6.5,1,5/29/2025
 Anthony Gross,82,Texas Chainsaw,4.5,1,5/29/2025
-Chris McCann,82,Texas Chainsaw,5,1,5/29/2025
+Chris McCann,82,Texas Chainsaw,5,0,5/29/2025
 Cheryl Brilmyer,82,Texas Chainsaw,6.5,1,5/29/2025
 Victoria Zubovich,62,Rosemary's Baby,5.9,1,9/19/2024
 Emma Rader,14,Hereditary,7.5,1,
@@ -547,7 +547,7 @@ Brittany Brewer,83,Funny Games,9,1,6/12/2025
 Jesus Gomez,83,Funny Games,7,1,6/12/2025
 Anthony Gross,83,Funny Games,6.1,1,6/12/2025
 Molly Kollmann,83,Funny Games,5,1,6/12/2025
-Chris McCann,83,Funny Games,3.4,1,6/12/2025
+Chris McCann,83,Funny Games,3.4,0,6/12/2025
 Cheryl Brilmyer,83,Funny Games,6,1,6/12/2025
 Jimmy Dwyer,83,Funny Games,6.4,1,6/12/2025
 Drew Stevens,83,Funny Games,6,1,6/12/2025
@@ -562,7 +562,7 @@ Drew Stevens,84,Fear Street: Prom Queen,4.3,1,6/26/2025
 Michael Vaughn,84,Fear Street: Prom Queen,5.9,1,6/26/2025
 Victoria Zubovich,84,Fear Street: Prom Queen,2.5,1,6/26/2025
 Jimmy Dwyer,84,Fear Street: Prom Queen,5.1,1,6/26/2025
-Chris McCann,84,Fear Street: Prom Queen,5.3,1,6/26/2025
+Chris McCann,84,Fear Street: Prom Queen,5.3,0,6/26/2025
 Brittany Brewer,85,Possessor,6.6,1,7/10/2025
 Jesus Gomez,85,Possessor,7,1,7/10/2025
 Cheryl Brilmyer,85,Possessor,7.2,1,7/10/2025
@@ -570,7 +570,7 @@ Drew Stevens,85,Possessor,7.3,1,7/10/2025
 Emma Rader,85,Possessor,8,1,7/10/2025
 Victoria Zubovich,85,Possessor,4.2,1,7/10/2025
 Jimmy Dwyer,85,Possessor,8.7,1,7/10/2025
-Chris McCann,85,Possessor,5,1,7/10/2025
+Chris McCann,85,Possessor,5,0,7/10/2025
 Brittany Brewer,86,Longlegs,7.5,1,7/24/2025
 Jesus Gomez,86,Longlegs,6.5,1,7/24/2025
 Cheryl Brilmyer,86,Longlegs,6.8,1,7/24/2025
@@ -578,13 +578,13 @@ Drew Stevens,86,Longlegs,7.5,1,7/24/2025
 Emma Rader,86,Longlegs,4.5,1,7/24/2025
 Victoria Zubovich,86,Longlegs,5.5,1,7/24/2025
 Jimmy Dwyer,86,Longlegs,7.6,1,7/24/2025
-Chris McCann,86,Longlegs,7,1,7/24/2025
+Chris McCann,86,Longlegs,7,0,7/24/2025
 Michael Vaughn,86,Longlegs,5,1,7/24/2025
 Anthony Gross,86,Longlegs,6.3,1,7/24/2025
 Brittany Brewer,87,It Follows,8,1,8/7/2025
 Jesus Gomez,87,It Follows,5,1,8/7/2025
 Anthony Gross,87,It Follows,6,1,8/7/2025
-Chris McCann,87,It Follows,5.1,1,8/7/2025
+Chris McCann,87,It Follows,5.1,0,8/7/2025
 Cheryl Brilmyer,87,It Follows,5,1,8/7/2025
 Jimmy Dwyer,87,It Follows,5.8,1,8/7/2025
 Drew Stevens,87,It Follows,7.2,1,8/7/2025
@@ -594,7 +594,7 @@ Emma Rader,87,It Follows,4.5,1,8/7/2025
 Brittany Brewer,88,Dawn of the Dead (2004),6.9,1,8/21/2025
 Jesus Gomez,88,Dawn of the Dead (2004),7,1,8/21/2025
 Anthony Gross,88,Dawn of the Dead (2004),6.5,1,8/21/2025
-Chris McCann,88,Dawn of the Dead (2004),7.1,1,8/21/2025
+Chris McCann,88,Dawn of the Dead (2004),7.1,0,8/21/2025
 Cheryl Brilmyer,88,Dawn of the Dead (2004),6.5,1,8/21/2025
 Jimmy Dwyer,88,Dawn of the Dead (2004),5.1,1,8/21/2025
 Drew Stevens,88,Dawn of the Dead (2004),7.4,1,8/21/2025
@@ -604,7 +604,7 @@ Emma Rader,88,Dawn of the Dead (2004),7.7,1,8/21/2025
 Brittany Brewer,89,Don't Move,4,1,9/4/2025
 Jesus Gomez,89,Don't Move,3.5,1,9/4/2025
 Anthony Gross,89,Don't Move,6,1,9/4/2025
-Chris McCann,89,Don't Move,4.9,1,9/4/2025
+Chris McCann,89,Don't Move,4.9,0,9/4/2025
 Cheryl Brilmyer,89,Don't Move,5.9,1,9/4/2025
 Jimmy Dwyer,89,Don't Move,6.6,1,9/4/2025
 Drew Stevens,89,Don't Move,4.3,1,9/4/2025
@@ -613,7 +613,7 @@ Victoria Zubovich,89,Don't Move,6.2,1,9/4/2025
 Emma Rader,89,Don't Move,7,1,9/4/2025
 Brittany Brewer,90,Mandy,2.5,1,9/18/2025
 Jesus Gomez,90,Mandy,5,1,9/18/2025
-Chris McCann,90,Mandy,1,1,9/18/2025
+Chris McCann,90,Mandy,1,0,9/18/2025
 Cheryl Brilmyer,90,Mandy,3.5,1,9/18/2025
 Jimmy Dwyer,90,Mandy,3.5,1,9/18/2025
 Drew Stevens,90,Mandy,7.2,1,9/18/2025
@@ -623,7 +623,7 @@ Anthony Gross,85,Possessor,7,1,7/10/2025
 Victoria Zubovich,90,Mandy,0,1,9/18/2025
 Brittany Brewer,91,The Lighthouse,4,1,10/3/2025
 Jesus Gomez,91,The Lighthouse,5,1,10/3/2025
-Chris McCann,91,The Lighthouse,0.1,1,10/3/2025
+Chris McCann,91,The Lighthouse,0.1,0,10/3/2025
 Cheryl Brilmyer,91,The Lighthouse,3.2,1,10/3/2025
 Jimmy Dwyer,91,The Lighthouse,3.2,1,10/3/2025
 Drew Stevens,91,The Lighthouse,6.7,1,10/3/2025
